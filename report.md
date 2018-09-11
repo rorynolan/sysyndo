@@ -5,9 +5,9 @@ Rory Nolan
 
 # Profit over time
 
-<img src="report_files/figure-gfm/profit-over-time-1.png" height="40%" />
+![](report_files/figure-gfm/profit-over-time-1.png)<!-- -->
 
-<img src="report_files/figure-gfm/profit-over-time-smooth-1.png" height="40%" />
+![](report_files/figure-gfm/profit-over-time-smooth-1.png)<!-- -->
 
 # ROI and ROC
 
@@ -56,9 +56,9 @@ bookie profits (pts)
 
 # Minimum acceptable odds
 
-We’ve had winnings of 727.27 points and losses of 637.34 points, so even
-if our odds were only a fraction 637.34 / 727.27 = 0.88 of what we
-actually got, we’d still be breaking even.
+We’ve had winnings of 727 points and losses of 637 points, so even if
+our odds were only a fraction 637 / 727 = 0.88 of what we actually got,
+we’d still be breaking even.
 
 # Winners and losers
 
@@ -71,3 +71,10 @@ we’ve bet on.
 | Win    |  81 | 19%     |
 | NR     |  27 | 6%      |
 | Place  |   9 | 2%      |
+
+# Win only vs each way
+
+  - We’ve made 302 *win only* bets, on which we’ve made a profit of
+    €5,383.
+  - We’ve made 64 *each way* bets, on which we’ve made a profit of
+    €-1,519.

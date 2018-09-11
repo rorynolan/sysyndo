@@ -7,7 +7,8 @@ output: github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, comment = "#>", 
-                      warning = FALSE, message = FALSE)
+                      warning = FALSE, message = FALSE,
+                      dpi = 600)
 pacman::p_load(googlesheets, MASS, tidyverse, janitor, filesstrings,
                quantmod, lubridate, magrittr, clipr, knitr)
 
@@ -57,7 +58,7 @@ df <- "Sys Syndo" %>%
 
 # Profit over time
 
-```{r profit-over-time, out.height='40%'}
+```{r profit-over-time}
 plot_df <- df %>% 
   mutate(week = get_week(date)) %>% 
   group_by(week) %>% 
@@ -67,7 +68,7 @@ ggplot(plot_df, aes(x = week, y = pat)) +
   ylab("profit at time (pts)") + ggtitle("profit over time")
 ```
 
-```{r profit-over-time-smooth, out.height='40%'}
+```{r profit-over-time-smooth}
 ggplot(plot_df, aes(x = week, y = pat)) + 
   geom_hline(yintercept = 0, colour = "red") + geom_smooth(se = FALSE) + 
   ylab("profit at time (pts)") + ggtitle("smoothed profit over time")
@@ -79,8 +80,8 @@ ggplot(plot_df, aes(x = week, y = pat)) +
 ```{r end-profit, include=FALSE}
 profit_df <- df %>% 
   filter(!is.na(date)) %>% 
-  mutate(profit_gbp = str_replace_all(profit_2, "£", ""), 
-         profit_eur = str_replace_all(profit, "€", ""))
+  mutate(profit_gbp = as.numeric(str_replace_all(profit_2, "£", "")), 
+         profit_eur = as.numeric(str_replace_all(profit, "€", "")))
 profit_eur <- sum(as.numeric(profit_df$profit_eur)) + 
   sum(as.numeric(profit_df$profit_gbp)) * exrate_gbp_eur
 profit_eur %<>% round()
@@ -133,8 +134,8 @@ df %>%
 # Minimum acceptable odds
 
 ```{r min-acceptable-odds}
-winnings_sum <- df$profit_pts %>% {sum(.[. > 0])}
-losses_sum <- df$profit_pts %>% {-sum(.[. < 0])}
+winnings_sum <- df$profit_pts %>% {sum(.[. > 0])} %>% round()
+losses_sum <- df$profit_pts %>% {-sum(.[. < 0])} %>% round()
 profit_factor <- losses_sum / winnings_sum
 ```
 
@@ -154,3 +155,25 @@ tabyl(df$result) %T>%
 ```
 
 
+# Win only vs each way
+
+```{r win-ew}
+win_total_eur <- profit_df %>% 
+  filter(is.na(places)) %>% 
+  mutate(prof_eur = profit_eur + profit_gbp * exrate_gbp_eur) %>% 
+  pull(prof_eur) %>% 
+  sum() %>% 
+  round()
+ew_total_eur <- profit_df %>% 
+  filter(!is.na(places)) %>% 
+  mutate(prof_eur = profit_eur + profit_gbp * exrate_gbp_eur) %>% 
+  pull(prof_eur) %>% 
+  sum() %>% 
+  round()
+non_dup_bets <- filter(df, !duplicated(paste(date, horse)))
+n_win_bets <- sum(is.na(non_dup_bets$places))
+n_ew_bets <- sum(!is.na(non_dup_bets$places))
+```
+
+* We've made `r n_win_bets` _win only_ bets, on which we've made a profit of €`r format(win_total_eur, big.mark = ",")`. 
+* We've made `r n_ew_bets` _each way_ bets, on which we've made a profit of €`r format(ew_total_eur, big.mark = ",")`.
