@@ -4,4 +4,5 @@
 # sysyndo
 
 The goal of `sysyndo` is to to provide insights into our Allan Darke
-stuff.
+stuff. The only thing worth doing for now is to check out the
+[report](https://github.com/rorynolan/sysyndo/blob/master/report.Rmd).
