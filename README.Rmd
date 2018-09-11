@@ -1,0 +1,16 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+# sysyndo
+
+The goal of `sysyndo` is to to provide insights into our Allan Darke stuff.
+
