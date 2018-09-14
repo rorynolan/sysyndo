@@ -1,7 +1,6 @@
 ---
 title: "report"
-author: "Rory Nolan"
-date: "09/09/2018"
+date: "`r Sys.Date()`"
 output: github_document
 ---
 
@@ -147,11 +146,17 @@ We've had winnings of `r winnings_sum` points and losses of `r losses_sum` point
 Here's a count of the number of winners, losers, places and non-runners we've bet on.
 
 ```{r winners-losers-count}
-tabyl(df$result) %T>% 
+df_win_lose <- df %>% 
+  mutate(ewres = paste(if_else(is.na(places), "Win only", "Each way"),
+                       result)) %>% 
+  pull(ewres) %>% {
+    .[!str_detect(., "NR")]
+  } %>% 
+  tabyl() %T>% 
   {names(.)[1] <- "result"} %>% 
   arrange(desc(n)) %>% 
-  mutate(percent = str_c(round(percent * 100), "%")) %>% 
-  kable()
+  mutate(percent = str_c(round(percent * 100), "%"))
+kable(df_win_lose)
 ```
 
 

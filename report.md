@@ -1,7 +1,6 @@
 report
 ================
-Rory Nolan
-09/09/2018
+2018-09-14
 
 # Profit over time
 
@@ -11,26 +10,25 @@ Rory Nolan
 
 # ROI and ROC
 
-We put in €9000 and we’ve made a profit of €3,865 on the bets. However,
-we’ve paid two subscriptions of £600 which amounts to €1,345 so our net
-profit is €2,520. That’s a return on capital of 28%.
+We put in €9000 and we’ve made a profit of €3,891 on the bets. However,
+we’ve paid two subscriptions of £600 which amounts to €1,346 so our net
+profit is €2,545. That’s a return on capital of 28.28%.
 
-We have wagered a total of €43,164 and made a betting profit of €3,865,
-which gives us a betting ROI of 8.95%.
+We have wagered a total of €43,651 and made a betting profit of €3,891,
+which gives us a betting ROI of 8.91%.
 
 # Have any bookies been riddled?
 
 | bookmaker    | Aidan   | Rory    | total   |
 | :----------- | :------ | :------ | :------ |
 | Bet365       | 0       | \+36.46 | \+36.46 |
-| Unibet       | \+8.69  | \+15.83 | \+24.52 |
+| Paddy Power  | \+37.38 | \-8.17  | \+29.21 |
 | William Hill | \+25.68 | \-2.53  | \+23.15 |
-| Betfred      | \+6.2   | \+12.42 | \+18.62 |
-| Paddy Power  | \+24.33 | \-8.17  | \+16.16 |
+| Unibet       | \+5.79  | \+15.83 | \+21.62 |
+| Betfred      | \+6.2   | \+7.92  | \+14.12 |
 | Coral        | \+14.11 | 0       | \+14.11 |
-| Matchbook    | \+12.06 | \+1.75  | \+13.81 |
+| Matchbook    | \+12.11 | \+1.75  | \+13.86 |
 | SportingBet  | 0       | \+10.01 | \+10.01 |
-| NA           | \+5.14  | 0       | \+5.14  |
 | 188Bet       | \+4.58  | \-1.11  | \+3.47  |
 | JuJu         | \+1.06  | 0       | \+1.06  |
 | LC Matchbook | 0       | \+1.03  | \+1.03  |
@@ -56,8 +54,8 @@ bookie profits (pts)
 
 # Minimum acceptable odds
 
-We’ve had winnings of 727 points and losses of 637 points, so even if
-our odds were only a fraction 637 / 727 = 0.88 of what we actually got,
+We’ve had winnings of 735 points and losses of 645 points, so even if
+our odds were only a fraction 645 / 735 = 0.88 of what we actually got,
 we’d still be breaking even.
 
 # Winners and losers
@@ -65,16 +63,17 @@ we’d still be breaking even.
 Here’s a count of the number of winners, losers, places and non-runners
 we’ve bet on.
 
-| result |   n | percent |
-| :----- | --: | :------ |
-| Lose   | 308 | 72%     |
-| Win    |  81 | 19%     |
-| NR     |  27 | 6%      |
-| Place  |   9 | 2%      |
+| result         |   n | percent |
+| :------------- | --: | :------ |
+| Win only Lose  | 256 | 64%     |
+| Win only Win   |  76 | 19%     |
+| Each way Lose  |  55 | 14%     |
+| Each way Place |   9 | 2%      |
+| Each way Win   |   6 | 1%      |
 
 # Win only vs each way
 
-  - We’ve made 302 *win only* bets, on which we’ve made a profit of
-    €5,383.
+  - We’ve made 306 *win only* bets, on which we’ve made a profit of
+    €5,411.
   - We’ve made 64 *each way* bets, on which we’ve made a profit of
-    €-1,519.
+    €-1,520.
