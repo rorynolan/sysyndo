@@ -143,7 +143,7 @@ We've had winnings of `r winnings_sum` points and losses of `r losses_sum` point
 
 # Winners and losers
 
-Here's a count of the number of winners, losers, places and non-runners we've bet on.
+Here's a count of the number of winners, losers, and places we've had.
 
 ```{r winners-losers-count}
 df_win_lose <- df %>% 
