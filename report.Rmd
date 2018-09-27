@@ -125,6 +125,7 @@ df %>%
   mutate_if(is.numeric, nas_to_zero) %>%
   mutate(total = Aidan + Rory) %>% 
   arrange(desc(total)) %>% 
+  mutate_if(is.numeric, round) %>% 
   mutate_if(is.numeric, pos_to_plus) %>% 
   kable(caption = "bookie profits (pts)")
 ```

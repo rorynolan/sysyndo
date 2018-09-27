@@ -1,6 +1,6 @@
 report
 ================
-2018-09-26
+2018-09-27
 
 # Profit over time
 
@@ -10,48 +10,48 @@ report
 
 # ROI and ROC
 
-We put in €9000 and we’ve made a profit of €3,970 on the bets. However,
-we’ve paid two subscriptions of £600 which amounts to €1,341 so our net
-profit is €2,629. That’s a return on capital of 29.21%.
+We put in €9000 and we’ve made a profit of €4,092 on the bets. However,
+we’ve paid two subscriptions of £600 which amounts to €1,345 so our net
+profit is €2,747. That’s a return on capital of 30.52%.
 
-We have wagered a total of €46,210 and made a betting profit of €3,970,
-which gives us a betting ROI of 8.59%.
+We have wagered a total of €46,210 and made a betting profit of €4,092,
+which gives us a betting ROI of 8.86%.
 
 # Have any bookies been riddled?
 
-| bookmaker    | Aidan   | Rory    | total   |
-| :----------- | :------ | :------ | :------ |
-| Bet365       | 0       | \+36.46 | \+36.46 |
-| Paddy Power  | \+37.38 | \-8.17  | \+29.21 |
-| Betfred      | \+6.2   | \+15.02 | \+21.22 |
-| William Hill | \+22.88 | \-2.53  | \+20.35 |
-| Unibet       | \+3.99  | \+15.83 | \+19.82 |
-| Coral        | \+14.11 | 0       | \+14.11 |
-| Matchbook    | \+11.91 | \+1.75  | \+13.66 |
-| LC Matchbook | 0       | \+10.26 | \+10.26 |
-| SportingBet  | 0       | \+10.01 | \+10.01 |
-| JuJu         | \+1.06  | 0       | \+1.06  |
-| Betway       | \-0.32  | 0       | \-0.32  |
-| SkyBet       | 0       | \-0.59  | \-0.59  |
-| Marathon     | 0       | \-0.78  | \-0.78  |
-| 188Bet       | \+0.58  | \-1.38  | \-0.8   |
-| SunBets      | \-3.9   | \+2.73  | \-1.17  |
-| BetVictor    | 0       | \-2.89  | \-2.89  |
-| SportsPesa   | 0       | \-4.55  | \-4.55  |
-| 888Sport     | 0       | \-4.63  | \-4.63  |
-| 10Bet        | 0       | \-4.89  | \-4.89  |
-| Boylesports  | \-8.17  | 0       | \-8.17  |
-| BetStars     | 0       | \-8.3   | \-8.3   |
-| Black Type   | 0       | \-10.63 | \-10.63 |
-| Ladbrokes    | 0       | \-18    | \-18    |
-| Betfair SB   | \-14.71 | \-3.7   | \-18.41 |
+| bookmaker    | Aidan | Rory | total |
+| :----------- | :---- | :--- | :---- |
+| Bet365       | 0     | \+36 | \+36  |
+| Paddy Power  | \+37  | \-8  | \+29  |
+| Betfred      | \+6   | \+15 | \+21  |
+| William Hill | \+23  | \-3  | \+20  |
+| Unibet       | \+4   | \+16 | \+20  |
+| Coral        | \+14  | 0    | \+14  |
+| Matchbook    | \+12  | \+2  | \+14  |
+| LC Matchbook | 0     | \+10 | \+10  |
+| SportingBet  | 0     | \+10 | \+10  |
+| JuJu         | \+1   | 0    | \+1   |
+| Boylesports  | \+1   | 0    | \+1   |
+| Betway       | 0     | 0    | 0     |
+| SkyBet       | 0     | \-1  | \-1   |
+| Marathon     | 0     | \-1  | \-1   |
+| SunBets      | \-4   | \+3  | \-1   |
+| 188Bet       | \+1   | \-3  | \-2   |
+| BetVictor    | 0     | \-3  | \-3   |
+| 888Sport     | 0     | \-5  | \-5   |
+| 10Bet        | 0     | \-5  | \-5   |
+| SportsPesa   | 0     | \-6  | \-6   |
+| BetStars     | 0     | \-9  | \-9   |
+| Black Type   | 0     | \-14 | \-14  |
+| Ladbrokes    | 0     | \-18 | \-18  |
+| Betfair SB   | \-15  | \-4  | \-18  |
 
 bookie profits (pts)
 
 # Minimum acceptable odds
 
-We’ve had winnings of 762 points and losses of 670 points, so even if
-our odds were only a fraction 670 / 762 = 0.88 of what we actually got,
+We’ve had winnings of 771 points and losses of 676 points, so even if
+our odds were only a fraction 676 / 771 = 0.88 of what we actually got,
 we’d still be breaking even.
 
 # Winners and losers
@@ -60,16 +60,15 @@ Here’s a count of the number of winners, losers, and places we’ve had.
 
 | result         |   n | percent |
 | :------------- | --: | :------ |
-| Win only Lose  | 268 | 63%     |
-| Win only Win   |  79 | 19%     |
+| Win only Lose  | 272 | 64%     |
+| Win only Win   |  80 | 19%     |
 | Each way Lose  |  57 | 13%     |
 | Each way Place |   9 | 2%      |
 | Each way Win   |   6 | 1%      |
-| Win only NA    |   5 | 1%      |
 
 # Win only vs each way
 
   - We’ve made 325 *win only* bets, on which we’ve made a profit of
-    €5,796.
+    €5,921.
   - We’ve made 67 *each way* bets, on which we’ve made a profit of
-    €-1,827.
+    €-1,829.
