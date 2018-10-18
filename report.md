@@ -12,7 +12,8 @@ report
 
 We put in €9000 and we’ve made a profit of €4,998 on the bets. However,
 we’ve paid three subscriptions of £600 which amounts to €2,050 so our
-net profit is €2,948. That’s a return on capital of 32.76%.
+net profit is €2,948. That’s a return on capital of 32.76%. This gives
+us a current bank of €11948.
 
 We have wagered a total of €50,257 and made a betting profit of €4,998,
 which gives us a betting ROI of 9.94%.

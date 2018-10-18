@@ -98,7 +98,7 @@ wagered_total_eur <- profit_df %>%
 total_investment_eur <- 9000
 ```
 
-We put in €`r total_investment_eur` and we've made a profit of €`r format(profit_eur, sci = FALSE, big.mark = ",")` on the bets. However, we've paid three subscriptions of £600 which amounts to €`r format(total_fee_eur, sci = FALSE, big.mark = ",")` so our net profit is €`r format(profit_eur - total_fee_eur, sci = FALSE, big.mark = ",")`. That's a return on capital of `r round(100 * (profit_eur - total_fee_eur) / total_investment_eur, 2)`%.
+We put in €`r total_investment_eur` and we've made a profit of €`r format(profit_eur, sci = FALSE, big.mark = ",")` on the bets. However, we've paid three subscriptions of £600 which amounts to €`r format(total_fee_eur, sci = FALSE, big.mark = ",")` so our net profit is €`r format(profit_eur - total_fee_eur, sci = FALSE, big.mark = ",")`. That's a return on capital of `r round(100 * (profit_eur - total_fee_eur) / total_investment_eur, 2)`%. This gives us a current bank of €`r format(round(total_investment_eur - total_fee_eur + profit_eur), sci = FALSE)`.
 
 We have wagered a total of €`r format(wagered_total_eur, big.mark = ",")` and made a betting profit of €`r format(profit_eur, sci = FALSE, big.mark = ",")`, which gives us a betting ROI of `r round(100 * profit_eur / wagered_total_eur, 2)`%.
 
