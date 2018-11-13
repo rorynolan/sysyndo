@@ -145,7 +145,8 @@ df %>%
   mutate(total = Aidan + Rory) %>% 
   arrange(desc(total)) %>% 
   mutate_if(is.numeric, round) %>% 
-  mutate_if(is.numeric, pos_to_plus)
+  mutate_if(is.numeric, pos_to_plus) %>% 
+  kable()
 ```
 
 

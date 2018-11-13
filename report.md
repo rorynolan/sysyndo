@@ -20,20 +20,34 @@ which gives us a betting ROI of 6.53%.
 
 # Have any bookies been riddled?
 
-    #> # A tibble: 26 x 4
-    #>    bookmaker    Aidan Rory  total
-    #>    <chr>        <chr> <chr> <chr>
-    #>  1 Paddy Power  +48   -6    +42  
-    #>  2 Bet365       0     +36   +36  
-    #>  3 Betfred      +6    +21   +27  
-    #>  4 Unibet       +10   +13   +24  
-    #>  5 William Hill +22   -3    +19  
-    #>  6 Coral        +17   0     +17  
-    #>  7 Matchbook    +10   +1    +11  
-    #>  8 SportingBet  0     +10   +10  
-    #>  9 Marathon     0     +3    +3   
-    #> 10 JuJu         +1    0     +1   
-    #> # ... with 16 more rows
+| bookmaker    | Aidan | Rory | total |
+| :----------- | :---- | :--- | :---- |
+| Paddy Power  | \+48  | \-6  | \+42  |
+| Bet365       | 0     | \+36 | \+36  |
+| Betfred      | \+6   | \+21 | \+27  |
+| Unibet       | \+10  | \+13 | \+24  |
+| William Hill | \+22  | \-3  | \+19  |
+| Coral        | \+17  | 0    | \+17  |
+| Matchbook    | \+10  | \+1  | \+11  |
+| SportingBet  | 0     | \+10 | \+10  |
+| Marathon     | 0     | \+3  | \+3   |
+| JuJu         | \+1   | 0    | \+1   |
+| Betway       | 0     | 0    | 0     |
+| SkyBet       | 0     | \-1  | \-1   |
+| SunBets      | \-4   | \+3  | \-1   |
+| BetBright    | 0     | \-1  | \-1   |
+| BetVictor    | 0     | \-3  | \-3   |
+| LC Matchbook | 0     | \-3  | \-4   |
+| BoyleSports  | \-5   | 0    | \-5   |
+| 888Sport     | 0     | \-5  | \-5   |
+| Boylesports  | \-5   | 0    | \-5   |
+| 188Bet       | \-2   | \-4  | \-5   |
+| 10Bet        | 0     | \-6  | \-6   |
+| SportsPesa   | 0     | \-6  | \-6   |
+| BetStars     | \-2   | \-9  | \-10  |
+| Betfair SB   | \-10  | \-2  | \-11  |
+| Ladbrokes    | 0     | \-18 | \-18  |
+| Black Type   | 0     | \-19 | \-19  |
 
 # Minimum acceptable odds
 
