@@ -51,8 +51,27 @@ df <- "Sys Syndo" %>%
   gs_read("Master Sheet") %>%
   clean_names() %>% 
   filter(!is.na(date), !is.na(profit_at_time_pts)) %>% 
-  mutate(date = ensure_date_dmy(date), time = ensure_time_hm(time)) %>% 
-  arrange(date, time, course, horse)
+  mutate(date = ensure_date_dmy(date), 
+         time = ensure_time_hm(time),
+         result = str_trim(result),
+         result = if_else(tolower(result) %in% c("uml", "unl"), 
+                          "Unmatched Loss", result),
+         result = if_else(tolower(result) %in% c("umw", "unw"), 
+                          "Unmatched Win", result)) %>% 
+  arrange(date, time, course, horse) %>% 
+  rename(eur_pt = "pt", gbp_pt = "pt_2", 
+         profit_eur = "profit", profit_gbp = "profit_2") 
+df_deduped <- df %>% 
+  mutate(ew = !is.na(places)) %>% 
+  group_by(date, time, course, horse, ew, result) %>% 
+  summarise(
+    odds = mean(evaluate_frac(odds) * stake_line_pts / sum(stake_line_pts)),
+    stake_line_pts = sum(stake_line_pts),
+    rule_4 = mean(first_number(rule_4) * profit_pts / sum(profit_pts)) / 100,
+    profit_pts = sum(profit_pts)
+  ) %>% 
+  ungroup() %>% 
+  mutate(rule_4 = if_else(is.na(rule_4), 0, rule_4))
 ```
 
 # Profit over time
@@ -79,14 +98,14 @@ ggplot(plot_df, aes(x = week, y = pat)) +
 ```{r end-profit, include=FALSE}
 profit_df <- df %>% 
   filter(!is.na(date)) %>% 
-  mutate(profit_gbp = as.numeric(str_replace_all(profit_2, "£", "")), 
-         profit_eur = as.numeric(str_replace_all(profit, "€", "")))
+  mutate(profit_gbp = as.numeric(str_replace_all(profit_gbp, "£", "")), 
+         profit_eur = as.numeric(str_replace_all(profit_eur, "€", "")))
 profit_eur <- sum(as.numeric(profit_df$profit_eur)) + 
   sum(as.numeric(profit_df$profit_gbp)) * exrate_gbp_eur
 profit_eur %<>% round()
 total_fee_eur <- 3 * 600 * exrate_gbp_eur
 total_fee_eur %<>% round()
-point_eur_mean <- mean(profit_df$pt)
+point_eur_mean <- mean(profit_df$eur_pt)
 wagered_total_eur <- profit_df %>% 
   mutate(w_t = if_else(is.na(places), stake_line_pts,
                        2 * stake_line_pts)) %>% 
@@ -126,8 +145,7 @@ df %>%
   mutate(total = Aidan + Rory) %>% 
   arrange(desc(total)) %>% 
   mutate_if(is.numeric, round) %>% 
-  mutate_if(is.numeric, pos_to_plus) %>% 
-  kable(caption = "bookie profits (pts)")
+  mutate_if(is.numeric, pos_to_plus)
 ```
 
 
@@ -183,3 +201,49 @@ n_ew_bets <- sum(!is.na(non_dup_bets$places))
 
 * We've made `r n_win_bets` _win only_ bets, on which we've made a profit of €`r format(win_total_eur, big.mark = ",")`. 
 * We've made `r n_ew_bets` _each way_ bets, on which we've made a profit of €`r format(ew_total_eur, big.mark = ",")`.
+
+
+# Unmatched Bets
+
+```{r prepare-unmatched}
+df_deduped_winonly <- filter(df_deduped, !ew)
+n_matched_winners <- df_deduped_winonly %>% 
+  filter(result == "Win") %>% 
+  nrow()
+n_matched_losers <- df_deduped_winonly %>% 
+  filter(result == "Lose") %>% 
+  nrow()
+matched_win_perc <- 
+  round(n_matched_winners / (n_matched_losers + n_matched_winners) * 100)
+n_unmatched_winners <- df_deduped_winonly %>% 
+  filter(result == "Unmatched Win") %>% 
+  nrow()
+n_unmatched_losers <- df_deduped_winonly %>% 
+  filter(result == "Unmatched Loss") %>% 
+  nrow()
+unmatched_win_perc <- 
+  round(n_unmatched_winners / (n_unmatched_losers + n_unmatched_winners) * 100)
+mean_rule4 <- df_deduped_winonly %>% 
+  filter(!str_detect(result, "Unmatched")) %>% 
+  filter(str_detect(result, "Win")) %>% 
+  pull(rule_4) %>% 
+  mean()
+pts_saved_by_unmatched <- df_deduped_winonly %>% 
+  filter(result == "Unmatched Loss") %>% 
+  pull(stake_line_pts) %>% 
+  sum() %>% 
+  round()
+pts_lost_by_unmatched <- df_deduped_winonly %>% 
+  filter(result == "Unmatched Win") %>% 
+  mutate(missed = stake_line_pts * odds) %>% 
+  pull(missed) %>% 
+  sum() %>% 
+  prod(1 - mean_rule4) %>% 
+  round()
+pts_profit_by_unmatched <- pts_saved_by_unmatched - pts_lost_by_unmatched
+unmatched_desc <- if_else(pts_profit_by_unmatched >= 0, "saved", "cost")
+```
+
+We'll consider only win only bets (and not each way bets) in this section.
+
+Of the bets that have been matched, there have been `r n_matched_winners` winners and `r n_matched_losers` losers. That means that `r matched_win_perc`% of matched bets have been winners. Of the bets that have not been matched, there have been `r n_unmatched_winners` winners and `r n_unmatched_losers` losers. That means that `r unmatched_win_perc`% of unmatched bets have been winners. Unmatched bets have saved us `r pts_saved_by_unmatched` points on losers but cost us `r pts_lost_by_unmatched` on winners, so overall unmatched bets have `r unmatched_desc` us `r abs(pts_profit_by_unmatched)` points.
