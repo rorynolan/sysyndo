@@ -1,6 +1,6 @@
 report
 ================
-2018-11-15
+2018-11-16
 
 # Profit over time
 
@@ -10,13 +10,13 @@ report
 
 # ROI and ROC
 
-We put in €9000 and we’ve made a profit of €3,825 on the bets. However,
-we’ve paid three subscriptions of £600 which amounts to €2,068 so our
-net profit is €1,757. That’s a return on capital of 19.52%. This gives
-us a current bank of €10757.
+We put in €9000 and we’ve made a profit of €4,131 on the bets. However,
+we’ve paid three subscriptions of £600 which amounts to €2,045 so our
+net profit is €2,086. That’s a return on capital of 23.18%. This gives
+us a current bank of €11086.
 
-We have wagered a total of €56,666 and made a betting profit of €3,825,
-which gives us a betting ROI of 6.75%.
+We have wagered a total of €56,949 and made a betting profit of €4,131,
+which gives us a betting ROI of 7.25%.
 
 # Have any bookies been riddled?
 
@@ -24,8 +24,8 @@ which gives us a betting ROI of 6.75%.
 | :----------- | :---- | :--- | :---- |
 | Paddy Power  | \+48  | \-5  | \+43  |
 | Bet365       | 0     | \+36 | \+36  |
-| Betfred      | \+6   | \+27 | \+33  |
-| Unibet       | \+10  | \+13 | \+23  |
+| Betfred      | \+6   | \+30 | \+36  |
+| Unibet       | \+10  | \+15 | \+25  |
 | William Hill | \+22  | \-3  | \+19  |
 | Coral        | \+17  | 0    | \+17  |
 | Matchbook    | \+10  | \+1  | \+11  |
@@ -45,14 +45,14 @@ which gives us a betting ROI of 6.75%.
 | 10Bet        | 0     | \-6  | \-6   |
 | SportsPesa   | 0     | \-6  | \-6   |
 | BetStars     | \-2   | \-9  | \-10  |
-| Betfair SB   | \-12  | \-3  | \-15  |
+| Betfair SB   | \-12  | \-2  | \-15  |
 | Ladbrokes    | 0     | \-18 | \-18  |
 | Black Type   | 0     | \-19 | \-19  |
 
 # Minimum acceptable odds
 
-We’ve had winnings of 892 points and losses of 799 points, so even if
-our odds were only a fraction 799 / 892 = 0.9 of what we actually got,
+We’ve had winnings of 897 points and losses of 799 points, so even if
+our odds were only a fraction 799 / 897 = 0.89 of what we actually got,
 we’d still be breaking even.
 
 # Winners and losers
@@ -61,10 +61,10 @@ Here’s a count of the number of winners, losers, and places we’ve had.
 
 | result                  |   n | percent |
 | :---------------------- | --: | :------ |
-| Win only Lose           | 340 | 64%     |
-| Win only Win            | 100 | 19%     |
+| Win only Lose           | 340 | 63%     |
+| Win only Win            | 100 | 18%     |
 | Each way Lose           |  65 | 12%     |
-| Each way Place          |   9 | 2%      |
+| Each way Place          |  16 | 3%      |
 | Each way Win            |   9 | 2%      |
 | Win only Unmatched Loss |   8 | 1%      |
 | Win only Unmatched Win  |   4 | 1%      |
@@ -72,9 +72,9 @@ Here’s a count of the number of winners, losers, and places we’ve had.
 # Win only vs each way
 
   - We’ve made 405 *win only* bets, on which we’ve made a profit of
-    €5,578.
-  - We’ve made 75 *each way* bets, on which we’ve made a profit of
-    €-1,753.
+    €5,567.
+  - We’ve made 77 *each way* bets, on which we’ve made a profit of
+    €-1,436.
 
 # Unmatched Bets
 
