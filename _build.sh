@@ -1,3 +1,3 @@
 #!/bin/bash
 
-Rscript -e "bookdown::render_book('report.Rmd')"
+Rscript -e "knitr::knit('report.Rmd')"
