@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = FALSE, comment = "#>",
                       warning = FALSE, message = FALSE,
                       dpi = 600)
 pacman::p_load(googlesheets, MASS, tidyverse, janitor, filesstrings,
-               quantmod, lubridate, magrittr, clipr, knitr)
+               quantmod, lubridate, magrittr, clipr, knitr, see)
 
 ensure_time_hm <- function(x) {
   if (!is.difftime(x)) x %<>% hm()
@@ -34,19 +34,24 @@ get_week <- function(date_vec) {
 get_exchange_rate <- function(from, to, dt = Sys.Date()) {
   obj.names <- getFX(paste0(from, "/", to), from = dt - 1, to = dt)
   result <- numeric(length(obj.names))
-  names(result) <- obj.names
-  for (obj.name in obj.names) {
-    result[obj.name] <- as.numeric(get(obj.name))[1]
-    # Clean up    
-    rm(obj.name)
+  names(result) <- obj.names %>% 
+    str_replace(coll("/"), "") %>% 
+    str_to_upper()
+  for (n in names(result)) {
+    result[n] <- as.numeric(get(n))[1]
+    rm(n)  # cleanup
   }
   return(result)
 }
 
 exrate_gbp_eur <- get_exchange_rate("GBP", "EUR")
+investments <- c(Rory = 4000, Aidan = 4000, John = 1000)
 
 ### Get the spreadsheet
-df <- "Sys Syndo" %>%
+bad <- TRUE
+bad_count <- 0
+while (bad) {
+  df <- "Sys Syndo" %>%
   gs_title() %>%
   gs_read("Master Sheet") %>%
   clean_names() %>% 
@@ -61,6 +66,12 @@ df <- "Sys Syndo" %>%
   arrange(date, time, course, horse) %>% 
   rename(eur_pt = "pt", gbp_pt = "pt_2", 
          profit_eur = "profit", profit_gbp = "profit_2") 
+  if (!"Loading" %in% df$profit_pts) bad <- FALSE
+  if (bad) {
+    count <- count + 1
+    if (count > 99) stop("Tried and failed to read sheet 100 times.")
+  }
+}
 df_deduped <- df %>% 
   mutate(ew = !is.na(places)) %>% 
   group_by(date, time, course, horse, ew, result) %>% 
@@ -72,6 +83,11 @@ df_deduped <- df %>%
   ) %>% 
   ungroup() %>% 
   mutate(rule_4 = if_else(is.na(rule_4), 0, rule_4))
+
+eur_pt_change_dates <- df %>% 
+  filter(c(FALSE, diff(eur_pt) != 0)) %>% 
+  pull(date)
+payment_dates <- c(df$date[1], eur_pt_change_dates)
 ```
 
 # Profit over time
@@ -81,15 +97,23 @@ plot_df <- df %>%
   mutate(week = get_week(date)) %>% 
   group_by(week) %>% 
   summarise(pat = median(profit_at_time_pts)) 
+x_breaks <- seq(0, max(plot_df$week) + 9, by = 10)
+y_breaks <- 0
+while (max(plot_df$pat) > max(y_breaks)) y_breaks %<>% c(max(y_breaks) + 20)
+while (min(plot_df$pat) < min(y_breaks)) y_breaks %<>% c(min(y_breaks) - 20)
 ggplot(plot_df, aes(x = week, y = pat)) + 
   geom_hline(yintercept = 0, colour = "red") + geom_line() + 
-  ylab("profit at time (pts)") + ggtitle("profit over time")
+  ylab("profit at time (pts)") + ggtitle("profit over time") +
+  scale_x_continuous(breaks = x_breaks) +
+  scale_y_continuous(breaks = y_breaks)
 ```
 
 ```{r profit-over-time-smooth}
 ggplot(plot_df, aes(x = week, y = pat)) + 
   geom_hline(yintercept = 0, colour = "red") + geom_smooth(se = FALSE) + 
-  ylab("profit at time (pts)") + ggtitle("smoothed profit over time")
+  ylab("profit at time (pts)") + ggtitle("smoothed profit over time") +
+  scale_x_continuous(breaks = x_breaks) +
+  scale_y_continuous(breaks = y_breaks)
 ```
 
 
