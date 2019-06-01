@@ -15,8 +15,8 @@ we’ve paid three subscriptions of £600 which amounts to €2,036 so our
 net profit is €1,779. That’s a return on capital of 19.77%. This gives
 us a current bank of €10779.
 
-We have wagered a total of €101,398 and made a betting profit of €3,815,
-which gives us a betting ROI of 3.76%.
+We have wagered a total of €95,515 and made a betting profit of €3,815,
+which gives us a betting ROI of 3.99%.
 
 # Have any bookies been riddled?
 
@@ -80,9 +80,9 @@ Here’s a count of the number of winners, losers, and places we’ve had.
 
 # Win only vs each way
 
-  - We’ve made 732 *win only* bets, on which we’ve made a profit of
+  - We’ve made 682 *win only* bets, on which we’ve made a profit of
     €3,652.
-  - We’ve made 112 *each way* bets, on which we’ve made a profit of
+  - We’ve made 103 *each way* bets, on which we’ve made a profit of
     €163.
 
 # Unmatched Bets

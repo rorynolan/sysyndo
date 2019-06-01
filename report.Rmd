@@ -55,7 +55,7 @@ while (bad) {
   gs_title() %>%
   gs_read("Master Sheet") %>%
   clean_names() %>% 
-  filter(!is.na(date), !is.na(profit_at_time_pts)) %>% 
+  filter(!is.na(date), !is.na(profit_at_time_pts), nchar(result) > 2) %>% 
   mutate(date = ensure_date_dmy(date), 
          time = ensure_time_hm(time),
          result = str_trim(result),
