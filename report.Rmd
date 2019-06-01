@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = FALSE, comment = "#>",
                       warning = FALSE, message = FALSE,
                       dpi = 600)
 pacman::p_load(googlesheets, MASS, tidyverse, janitor, filesstrings,
-               quantmod, lubridate, magrittr, clipr, knitr, see)
+               quantmod, lubridate, magrittr, clipr, knitr)
 
 ensure_time_hm <- function(x) {
   if (!is.difftime(x)) x %<>% hm()
@@ -66,10 +66,11 @@ while (bad) {
   arrange(date, time, course, horse) %>% 
   rename(eur_pt = "pt", gbp_pt = "pt_2", 
          profit_eur = "profit", profit_gbp = "profit_2") 
-  if (!"Loading" %in% df$profit_pts) bad <- FALSE
+  if (is.numeric(df$profit_pts) && is.numeric(df$profit_at_time_pts))
+    bad <- FALSE
   if (bad) {
-    count <- count + 1
-    if (count > 99) stop("Tried and failed to read sheet 100 times.")
+    bad_count <- bad_count + 1
+    if (bad_count > 99) stop("Tried and failed to read sheet 100 times.")
   }
 }
 df_deduped <- df %>% 

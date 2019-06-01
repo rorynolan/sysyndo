@@ -11,5 +11,4 @@ Imports:
     lubridate,
     magrittr,
     clipr,
-    knitr,
-    see
+    knitr

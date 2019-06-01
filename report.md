@@ -10,13 +10,13 @@ report
 
 # ROI and ROC
 
-We put in €9000 and we’ve made a profit of €3,868 on the bets. However,
+We put in €9000 and we’ve made a profit of €3,815 on the bets. However,
 we’ve paid three subscriptions of £600 which amounts to €2,036 so our
-net profit is €1,832. That’s a return on capital of 20.36%. This gives
-us a current bank of €10832.
+net profit is €1,779. That’s a return on capital of 19.77%. This gives
+us a current bank of €10779.
 
-We have wagered a total of €101,397 and made a betting profit of €3,868,
-which gives us a betting ROI of 3.81%.
+We have wagered a total of €101,398 and made a betting profit of €3,815,
+which gives us a betting ROI of 3.76%.
 
 # Have any bookies been riddled?
 
@@ -33,7 +33,6 @@ which gives us a betting ROI of 3.81%.
 | NA           | 0     | \+7  | \+7   |
 | Coral        | \+5   | 0    | \+5   |
 | Marathon     | 0     | \+2  | \+2   |
-| JuJu         | \+1   | 0    | \+1   |
 | SportNation  | 0     | 0    | 0     |
 | Betway       | 0     | 0    | 0     |
 | HC Matchbook | 0     | \-1  | \-1   |
@@ -59,8 +58,8 @@ which gives us a betting ROI of 3.81%.
 
 # Minimum acceptable odds
 
-We’ve had winnings of 1374 points and losses of 1280 points, so even if
-our odds were only a fraction 1280 / 1374 = 0.93 of what we actually
+We’ve had winnings of 1373 points and losses of 1280 points, so even if
+our odds were only a fraction 1280 / 1373 = 0.93 of what we actually
 got, we’d still be breaking even.
 
 # Winners and losers
@@ -70,7 +69,7 @@ Here’s a count of the number of winners, losers, and places we’ve had.
 | result                  |   n | percent |
 | :---------------------- | --: | :------ |
 | Win only Lose           | 901 | 69%     |
-| Win only Win            | 182 | 14%     |
+| Win only Win            | 181 | 14%     |
 | Each way Lose           | 108 | 8%      |
 | Win only Unmatched Loss |  44 | 3%      |
 | Each way Place          |  37 | 3%      |
@@ -82,7 +81,7 @@ Here’s a count of the number of winners, losers, and places we’ve had.
 # Win only vs each way
 
   - We’ve made 732 *win only* bets, on which we’ve made a profit of
-    €3,705.
+    €3,652.
   - We’ve made 112 *each way* bets, on which we’ve made a profit of
     €163.
 
