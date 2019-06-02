@@ -8,7 +8,6 @@ setup_git() {
 commit_files() {
   git add -u
   git commit -m "Daily auto build of report.md. Travis build: ${TRAVIS_BUILD_NUMBER}."
-  git push origin master
 }
 
 upload_files() {
@@ -16,6 +15,9 @@ upload_files() {
   git push --quiet --set-upstream origin master
 }
 
+echo "Setup: "
 setup_git
+echo "Commit: "
 commit_files
+echo "Upload: "
 upload_files
