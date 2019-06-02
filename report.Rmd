@@ -50,6 +50,7 @@ investments <- c(Rory = 4000, Aidan = 4000, John = 1000)
 ### Get the spreadsheet
 bad <- TRUE
 bad_count <- 0
+gs_auth(token = readRDS("googlesheets_token.rds"))
 while (bad) {
   df <- "Sys Syndo" %>%
   gs_title() %>%
