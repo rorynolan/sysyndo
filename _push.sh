@@ -11,7 +11,7 @@ commit_files() {
 }
 
 upload_files() {
-  git remote add origin https://${GITHUB_PAT}@github.com/rorynolan/sysyndo.git > /dev/null 2>&1
+  git remote set-url origin https://${GITHUB_PAT}@github.com/rorynolan/sysyndo.git
   git push --set-upstream origin master
 }
 
