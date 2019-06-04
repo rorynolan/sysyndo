@@ -54,7 +54,7 @@ gs_auth(token = readRDS("googlesheets_token.rds"))
 while (bad) {
   df <- "Sys Syndo" %>%
   gs_title() %>%
-  gs_read("Master Sheet") %>%
+  gs_read("Cat 20") %>%
   clean_names() %>% 
   filter(!is.na(date), !is.na(profit_at_time_pts), nchar(result) > 2) %>% 
   mutate(date = ensure_date_dmy(date), 
@@ -282,4 +282,4 @@ unmatched_desc <- if_else(pts_profit_by_unmatched >= 0, "saved", "cost")
 
 We'll consider only win only bets (and not each way bets) in this section.
 
-Of the bets that have been matched, there have been `r n_matched_winners` winners and `r n_matched_losers` losers. That means that `r matched_win_perc`% of matched bets have been winners. Of the bets that have not been matched, there have been `r n_unmatched_winners` winners and `r n_unmatched_losers` losers. That means that `r unmatched_win_perc`% of unmatched bets have been winners. Unmatched bets have saved us `r pts_saved_by_unmatched` points on losers but cost us `r pts_lost_by_unmatched` on winners, whereas getting better odds on posted bets which were matched has made us `r pts_gained_by_better_posted_odds` points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, unmatched bets have `r unmatched_desc` us `r abs(pts_profit_by_unmatched)` points.
+Of the bets that have been matched, there have been `r n_matched_winners` winners and `r n_matched_losers` losers. That means that `r matched_win_perc`% of matched bets have been winners. Of the bets that have not been matched, there have been `r n_unmatched_winners` winners and `r n_unmatched_losers` losers. That means that `r unmatched_win_perc`% of unmatched bets have been winners. Unmatched bets have saved us `r pts_saved_by_unmatched` points on losers but cost us `r pts_lost_by_unmatched` on winners, whereas getting better odds on posted bets which were matched has made us `r pts_gained_by_better_posted_odds` points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has `r unmatched_desc` us `r abs(pts_profit_by_unmatched)` points.
