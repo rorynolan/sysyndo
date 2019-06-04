@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "`r Sys.Date()`"
+date: "`r lubridate::now()`"
 output: github_document
 ---
 
@@ -71,6 +71,7 @@ while (bad) {
     bad <- FALSE
   if (bad) {
     bad_count <- bad_count + 1
+    Sys.sleep(3)
     if (bad_count > 99) stop("Tried and failed to read sheet 100 times.")
   }
 }
