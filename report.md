@@ -1,6 +1,6 @@
 report
 ================
-2019-06-04 22:39:01
+2019-06-05 20:53:37
 
 # Profit over time
 
@@ -10,12 +10,12 @@ report
 
 # ROI and ROC
 
-We put in €9000 and we’ve made a profit of €5,824 on the bets. However,
-we’ve paid three subscriptions of £600 which amounts to €2,032 so our
-net profit is €3,792. That’s a return on capital of 42.13%. This gives
-us a current bank of €12792.
+We put in €9000 and we’ve made a profit of €5,822 on the bets. However,
+we’ve paid three subscriptions of £600 which amounts to €2,029 so our
+net profit is €3,793. That’s a return on capital of 42.14%. This gives
+us a current bank of €12793.
 
-We have wagered a total of €96,514 and made a betting profit of €5,824,
+We have wagered a total of €96,514 and made a betting profit of €5,822,
 which gives us a betting ROI of 6.03%.
 
 # Have any bookies been riddled?
@@ -81,9 +81,9 @@ Here’s a count of the number of winners, losers, and places we’ve had.
 # Win only vs each way
 
   - We’ve made 690 *win only* bets, on which we’ve made a profit of
-    €5,421.
+    €5,418.
   - We’ve made 103 *each way* bets, on which we’ve made a profit of
-    €403.
+    €404.
 
 # Unmatched Bets
 
