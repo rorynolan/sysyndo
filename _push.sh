@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 setup_git() {
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis CI"
@@ -15,9 +16,13 @@ upload_files() {
   git push --set-upstream origin master
 }
 
+echo "Status: "
+git status
 echo "Setup: "
 setup_git
 echo "Commit: "
 commit_files
 echo "Upload: "
 upload_files
+echo "Status: "
+git status
