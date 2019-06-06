@@ -4,6 +4,9 @@ dist: xenial
 cache:
   packages: true
 
+env:
+  - TRAVIS_BRANCH=master
+
 before_install:
   - openssl aes-256-cbc -K $encrypted_008a55c24d34_key -iv $encrypted_008a55c24d34_iv
     -in googlesheets_token.rds.enc -out googlesheets_token.rds -d
