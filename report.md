@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2019-06-08 09:04:25"
+date: "2019-06-08 09:07:14"
 output: github_document
 ---
 
@@ -19,7 +19,7 @@ output: github_document
 
 We put in €9000 and we've made a profit of €5,666 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,027 so our net profit is €3,639. That's a return on capital of 40.43%. This gives us a current bank of €12639.
 
-We have wagered a total of €97,583 and made a betting profit of €5,666, which gives us a betting ROI of 5.81%.
+We have wagered a total of €97,589 and made a betting profit of €5,666, which gives us a betting ROI of 5.81%.
 
 
 # Have any bookies been riddled?
@@ -31,21 +31,21 @@ We have wagered a total of €97,583 and made a betting profit of €5,666, whic
 |Paddy Power  |+42   |+1   |+43   |
 |Matchbook    |+35   |+4   |+39   |
 |Bet365       |0     |+36  |+36   |
-|Unibet       |+16   |+20  |+35   |
+|Unibet       |+16   |+19  |+34   |
 |SkyBet       |+14   |-1   |+13   |
 |SportingBet  |0     |+10  |+10   |
 |10Bet        |+14   |-6   |+8    |
+|NA           |0     |+7   |+7    |
 |SpreadEx     |+6    |0    |+6    |
 |Coral        |+5    |0    |+5    |
-|NA           |0     |+5   |+5    |
 |Marathon     |0     |+2   |+2    |
-|SportNation  |0     |0    |0     |
 |Betway       |0     |0    |0     |
 |HC Matchbook |0     |-1   |-1    |
 |Betstars     |-1    |0    |-1    |
 |Uniber       |0     |-1   |-1    |
 |SunBets      |-4    |+3   |-1    |
 |BetBright    |0     |-1   |-1    |
+|SportNation  |0     |-2   |-2    |
 |RedZone      |0     |-2   |-2    |
 |William Hill |-1    |-1   |-2    |
 |BetVictor    |0     |-3   |-3    |
@@ -76,7 +76,7 @@ Here's a count of the number of winners, losers, and places we've had.
 
 |result                  |   n|percent |
 |:-----------------------|---:|:-------|
-|Win only Lose           | 936|69%     |
+|Win only Lose           | 937|69%     |
 |Win only Win            | 188|14%     |
 |Each way Lose           | 108|8%      |
 |Win only Unmatched Loss |  45|3%      |
