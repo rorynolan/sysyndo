@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2019-06-09 02:43:41"
+date: "2019-06-09 17:33:50"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €5,664 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,023 so our net profit is €3,641. That's a return on capital of 40.46%. This gives us a current bank of €12641.
+We put in €9000 and we've made a profit of €NA on the bets. However, we've paid three subscriptions of £600 which amounts to €2,023 so our net profit is €NA. That's a return on capital of NA%. This gives us a current bank of €NA.
 
-We have wagered a total of €97,589 and made a betting profit of €5,664, which gives us a betting ROI of 5.8%.
+We have wagered a total of €97,789 and made a betting profit of €NA, which gives us a betting ROI of NA%.
 
 
 # Have any bookies been riddled?
@@ -27,15 +27,15 @@ We have wagered a total of €97,589 and made a betting profit of €5,664, whic
 
 |bookmaker    |Aidan |Rory |total |
 |:------------|:-----|:----|:-----|
+|Unibet       |+46   |+19  |+64   |
 |Betfred      |+20   |+34  |+54   |
 |Paddy Power  |+42   |+1   |+43   |
 |Matchbook    |+35   |+4   |+39   |
 |Bet365       |0     |+36  |+36   |
-|Unibet       |+16   |+19  |+34   |
+|NA           |+11   |+7   |+18   |
 |SkyBet       |+14   |-1   |+13   |
 |SportingBet  |0     |+10  |+10   |
 |10Bet        |+14   |-6   |+8    |
-|NA           |0     |+7   |+7    |
 |SpreadEx     |+6    |0    |+6    |
 |Coral        |+5    |0    |+5    |
 |Marathon     |0     |+2   |+2    |
@@ -66,7 +66,7 @@ We have wagered a total of €97,589 and made a betting profit of €5,664, whic
 
 
 
-We've had winnings of 1423 points and losses of 1298 points, so even if our odds were only a fraction 1298 / 1423 = 0.91 of what we actually got, we'd still be breaking even.
+We've had winnings of 1464 points and losses of 1298 points, so even if our odds were only a fraction 1298 / 1464 = 0.89 of what we actually got, we'd still be breaking even.
 
 
 # Winners and losers
@@ -77,7 +77,7 @@ Here's a count of the number of winners, losers, and places we've had.
 |result                  |   n|percent |
 |:-----------------------|---:|:-------|
 |Win only Lose           | 937|69%     |
-|Win only Win            | 188|14%     |
+|Win only Win            | 190|14%     |
 |Each way Lose           | 108|8%      |
 |Win only Unmatched Loss |  45|3%      |
 |Each way Place          |  37|3%      |
@@ -91,7 +91,7 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 699 _win only_ bets, on which we've made a profit of €5,258. 
+* We've made 701 _win only_ bets, on which we've made a profit of €NA. 
 * We've made 103 _each way_ bets, on which we've made a profit of €406.
 
 
@@ -101,4 +101,4 @@ Here's a count of the number of winners, losers, and places we've had.
 
 We'll consider only win only bets (and not each way bets) in this section.
 
-Of the bets that have been matched, there have been 129 winners and 559 losers. That means that 19% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 45 losers. That means that 22% of unmatched bets have been winners. Unmatched bets have saved us 43 points on losers but cost us 81 on winners, whereas getting better odds on posted bets which were matched has made us 50 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 12 points.
+Of the bets that have been matched, there have been 131 winners and 559 losers. That means that 19% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 45 losers. That means that 22% of unmatched bets have been winners. Unmatched bets have saved us 43 points on losers but cost us 81 on winners, whereas getting better odds on posted bets which were matched has made us 50 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 12 points.
