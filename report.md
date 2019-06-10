@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2019-06-10 10:11:30"
+date: "2019-06-10 10:13:59"
 output: github_document
 ---
 
@@ -27,7 +27,7 @@ We have wagered a total of €98,051 and made a betting profit of €NA, which g
 
 |bookmaker    |Aidan |Rory |total |
 |:------------|:-----|:----|:-----|
-|Unibet       |+16   |+55  |+71   |
+|Unibet       |+16   |+55  |+70   |
 |Betfred      |+20   |+37  |+57   |
 |Paddy Power  |+42   |+1   |+43   |
 |Matchbook    |+35   |+4   |+39   |
@@ -66,7 +66,7 @@ We have wagered a total of €98,051 and made a betting profit of €NA, which g
 
 
 
-We've had winnings of 1473 points and losses of 1299 points, so even if our odds were only a fraction 1299 / 1473 = 0.88 of what we actually got, we'd still be breaking even.
+We've had winnings of 1472 points and losses of 1299 points, so even if our odds were only a fraction 1299 / 1472 = 0.88 of what we actually got, we'd still be breaking even.
 
 
 # Winners and losers
