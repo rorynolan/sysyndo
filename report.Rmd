@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = FALSE, comment = "#>",
                       warning = FALSE, message = FALSE,
                       dpi = 600)
 pacman::p_load(googlesheets, MASS, tidyverse, janitor, filesstrings,
-               quantmod, lubridate, magrittr, clipr, knitr)
+               quantmod, lubridate, magrittr, clipr, knitr, conflicted)
 
 ensure_time_hm <- function(x) {
   if (!is.difftime(x)) x %<>% hm()
@@ -56,7 +56,7 @@ while (bad) {
   gs_title() %>%
   gs_read("Cat 20") %>%
   clean_names() %>% 
-  filter(!is.na(date), !is.na(profit_at_time_pts), nchar(result) > 2) %>% 
+  dplyr::filter(!is.na(date), !is.na(profit_at_time_pts), nchar(result) > 2) %>% 
   mutate(date = ensure_date_dmy(date), 
          time = ensure_time_hm(time),
          result = str_trim(result),
@@ -88,8 +88,8 @@ df_deduped <- df %>%
   mutate(rule_4 = if_else(is.na(rule_4), 0, rule_4))
 
 eur_pt_change_dates <- df %>% 
-  filter(c(FALSE, diff(eur_pt) != 0)) %>% 
-  pull(date)
+  dplyr::filter(c(FALSE, diff(eur_pt) != 0)) %>% 
+  dplyr::pull(date)
 payment_dates <- c(df$date[1], eur_pt_change_dates)
 ```
 
@@ -100,6 +100,10 @@ plot_df <- df %>%
   mutate(week = get_week(date)) %>% 
   group_by(week) %>% 
   summarise(pat = median(profit_at_time_pts)) 
+plot_df %<>% bind_rows(
+  tibble(week = dplyr::last(.[["week"]] + 1), 
+         pat = dplyr::last(df$profit_at_time_pts))
+  )
 x_breaks <- seq(0, max(plot_df$week) + 9, by = 10)
 y_breaks <- 0
 while (max(plot_df$pat) > max(y_breaks)) y_breaks %<>% c(max(y_breaks) + 20)
@@ -124,7 +128,7 @@ ggplot(plot_df, aes(x = week, y = pat)) +
 
 ```{r end-profit, include=FALSE}
 profit_df <- df %>% 
-  filter(!is.na(date)) %>% 
+  dplyr::filter(!is.na(date)) %>% 
   mutate(profit_gbp = as.numeric(str_replace_all(profit_gbp, "£", "")), 
          profit_eur = as.numeric(str_replace_all(profit_eur, "€", "")))
 profit_eur <- sum(as.numeric(profit_df$profit_eur)) + 
@@ -136,7 +140,7 @@ point_eur_mean <- mean(profit_df$eur_pt)
 wagered_total_eur <- profit_df %>% 
   mutate(w_t = if_else(is.na(places), stake_line_pts,
                        2 * stake_line_pts)) %>% 
-  pull(w_t) %>% 
+  dplyr::pull(w_t) %>% 
   sum() %>% 
   c(point_eur_mean) %>% 
   prod() %>% 
@@ -196,7 +200,7 @@ Here's a count of the number of winners, losers, and places we've had.
 df_win_lose <- df %>% 
   mutate(ewres = paste(if_else(is.na(places), "Win only", "Each way"),
                        result)) %>% 
-  pull(ewres) %>% {
+  dplyr::pull(ewres) %>% {
     .[!str_detect(., "NR")]
   } %>% 
   tabyl() %T>% 
@@ -211,18 +215,18 @@ kable(df_win_lose)
 
 ```{r win-ew}
 win_total_eur <- profit_df %>% 
-  filter(is.na(places)) %>% 
+  dplyr::filter(is.na(places)) %>% 
   mutate(prof_eur = profit_eur + profit_gbp * exrate_gbp_eur) %>% 
-  pull(prof_eur) %>% 
+  dplyr::pull(prof_eur) %>% 
   sum() %>% 
   round()
 ew_total_eur <- profit_df %>% 
-  filter(!is.na(places)) %>% 
+  dplyr::filter(!is.na(places)) %>% 
   mutate(prof_eur = profit_eur + profit_gbp * exrate_gbp_eur) %>% 
-  pull(prof_eur) %>% 
+  dplyr::pull(prof_eur) %>% 
   sum() %>% 
   round()
-non_dup_bets <- filter(df, !duplicated(paste(date, horse)))
+non_dup_bets <- dplyr::filter(df, !duplicated(paste(date, horse)))
 n_win_bets <- sum(is.na(non_dup_bets$places))
 n_ew_bets <- sum(!is.na(non_dup_bets$places))
 ```
@@ -234,45 +238,45 @@ n_ew_bets <- sum(!is.na(non_dup_bets$places))
 # Unmatched Bets
 
 ```{r prepare-unmatched}
-df_deduped_winonly <- filter(df_deduped, !ew)
+df_deduped_winonly <- dplyr::filter(df_deduped, !ew)
 n_matched_winners <- df_deduped_winonly %>% 
-  filter(result == "Win") %>% 
+  dplyr::filter(result == "Win") %>% 
   nrow()
 n_matched_losers <- df_deduped_winonly %>% 
-  filter(result == "Lose") %>% 
+  dplyr::filter(result == "Lose") %>% 
   nrow()
 matched_win_perc <- 
   round(n_matched_winners / (n_matched_losers + n_matched_winners) * 100)
 n_unmatched_winners <- df_deduped_winonly %>% 
-  filter(result == "Unmatched Win") %>% 
+  dplyr::filter(result == "Unmatched Win") %>% 
   nrow()
 n_unmatched_losers <- df_deduped_winonly %>% 
-  filter(result == "Unmatched Loss") %>% 
+  dplyr::filter(result == "Unmatched Loss") %>% 
   nrow()
 unmatched_win_perc <- 
   round(n_unmatched_winners / (n_unmatched_losers + n_unmatched_winners) * 100)
 mean_rule4 <- df_deduped_winonly %>% 
-  filter(!str_detect(result, "Unmatched")) %>% 
-  filter(str_detect(result, "Win")) %>% 
-  pull(rule_4) %>% 
+  dplyr::filter(!str_detect(result, "Unmatched")) %>% 
+  dplyr::filter(str_detect(result, "Win")) %>% 
+  dplyr::pull(rule_4) %>% 
   mean()
 pts_saved_by_unmatched <- df_deduped_winonly %>% 
-  filter(result == "Unmatched Loss") %>% 
-  pull(stake_line_pts) %>% 
+  dplyr::filter(result == "Unmatched Loss") %>% 
+  dplyr::pull(stake_line_pts) %>% 
   sum() %>% 
   round()
 pts_lost_by_unmatched <- df_deduped_winonly %>% 
-  filter(result == "Unmatched Win") %>% 
+  dplyr::filter(result == "Unmatched Win") %>% 
   mutate(missed = stake_line_pts * odds) %>% 
-  pull(missed) %>% 
+  dplyr::pull(missed) %>% 
   sum() %>% 
   prod(1 - mean_rule4, 0.8) %>% 
   round()
 pts_gained_by_better_posted_odds <- df %>% 
-  filter(date >= "2018-09-01",
+  dplyr::filter(date >= "2018-09-01",
          str_detect(bookmaker, "atchbook"),
          profit_pts > 0) %>% 
-  pull(profit_pts) %>% 
+  dplyr::pull(profit_pts) %>% 
   sum() %>% 
   prod(1 / 0.8 - 1) %>% 
   round()

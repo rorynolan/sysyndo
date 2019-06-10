@@ -12,4 +12,7 @@ Imports:
     magrittr,
     clipr,
     knitr,
-    pacman
+    pacman,
+    tidyverse,
+    git2r,
+    here
