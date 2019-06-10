@@ -129,8 +129,8 @@ ggplot(plot_df, aes(x = week, y = pat)) +
 ```{r end-profit, include=FALSE}
 profit_df <- df %>% 
   dplyr::filter(!is.na(date)) %>% 
-  mutate(profit_gbp = first_number(profit_gbp, decimals = TRUE, commas = TRUE), 
-         profit_eur = first_number(profit_eur, decimals = TRUE, commas = TRUE))
+  mutate(profit_gbp = first_currency(profit_gbp)$amount, 
+         profit_eur = first_currency(profit_eur)$amount)
 profit_eur <- sum(as.numeric(profit_df$profit_eur)) + 
   sum(as.numeric(profit_df$profit_gbp)) * exrate_gbp_eur
 profit_eur %<>% round()
