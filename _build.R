@@ -17,14 +17,12 @@ need_to_push <- function() {
 }
 
 # Sync with remote
+creds <- cred_user_pass("rorynoolan@gmail.com", Sys.getenv("GITHUB_PAT"))
 checkout(repository(), branch = "master")
 remote_set_url(name = "origin",
-               url = str_c("http", "s", ":", "//",
-                           Sys.getenv("GITHUB_PAT"),
-                           "@github.com/",
-                           "rorynolan/sysyndo.git"))
+               url = "https://github.com/rorynolan/sysyndo.git")
 branch_set_upstream(branch = branches()$master, "origin/master")
-git2r::pull()
+git2r::pull(credentials = creds)
 
 # knit
 knit(here("report.Rmd"))
@@ -38,6 +36,5 @@ if (need_to_push()) {
                          "."),
          all = TRUE
   )
-  push(credentials = cred_user_pass("rorynoolan@gmail.com",
-                                    Sys.getenv("GITHUB_PAT")))
+  push(credentials = creds)
 }
