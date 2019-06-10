@@ -15,4 +15,5 @@ Imports:
     pacman,
     tidyverse,
     git2r,
-    here
+    here,
+    conflicted
