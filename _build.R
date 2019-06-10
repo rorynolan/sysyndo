@@ -38,5 +38,6 @@ if (need_to_push()) {
                          "."),
          all = TRUE
   )
-  push()
+  push(credentials = cred_user_pass("rorynoolan@gmail.com",
+                                    Sys.getenv("GITHUB_PAT")))
 }
