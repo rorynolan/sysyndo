@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2019-06-13 17:35:18"
+date: "2019-06-14 17:36:00"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €8,061 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,023 so our net profit is €6,038. That's a return on capital of 67.09%. This gives us a current bank of €15038.
+We put in €9000 and we've made a profit of €7,752 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,023 so our net profit is €5,729. That's a return on capital of 63.66%. This gives us a current bank of €14729.
 
-We have wagered a total of €99,091 and made a betting profit of €8,061, which gives us a betting ROI of 8.13%.
+We have wagered a total of €99,430 and made a betting profit of €7,752, which gives us a betting ROI of 7.8%.
 
 
 # Have any bookies been riddled?
@@ -39,7 +39,6 @@ We have wagered a total of €99,091 and made a betting profit of €8,061, whic
 |SpreadEx     |+6    |0    |+6    |
 |Coral        |+5    |0    |+5    |
 |Marathon     |0     |+2   |+2    |
-|William Hill |+4    |-4   |+1    |
 |Betway       |0     |0    |0     |
 |HC Matchbook |0     |-1   |-1    |
 |Betstars     |-1    |0    |-1    |
@@ -51,6 +50,7 @@ We have wagered a total of €99,091 and made a betting profit of €8,061, whic
 |BetVictor    |0     |-3   |-3    |
 |Various      |-3    |-1   |-4    |
 |RedZone      |0     |-4   |-4    |
+|William Hill |+4    |-9   |-4    |
 |BoyleSports  |-5    |0    |-5    |
 |888Sport     |0     |-5   |-5    |
 |Boylesports  |-6    |0    |-6    |
@@ -58,7 +58,7 @@ We have wagered a total of €99,091 and made a betting profit of €8,061, whic
 |188Bet       |-3    |-4   |-6    |
 |BetStars     |-2    |-9   |-10   |
 |Ladbrokes    |0     |-18  |-18   |
-|Black Type   |0     |-25  |-25   |
+|Black Type   |0     |-26  |-26   |
 |Betfair SB   |-24   |-8   |-33   |
 
 
@@ -66,7 +66,7 @@ We have wagered a total of €99,091 and made a betting profit of €8,061, whic
 
 
 
-We've had winnings of 1481 points and losses of 1314 points, so even if our odds were only a fraction 1314 / 1481 = 0.89 of what we actually got, we'd still be breaking even.
+We've had winnings of 1481 points and losses of 1319 points, so even if our odds were only a fraction 1319 / 1481 = 0.89 of what we actually got, we'd still be breaking even.
 
 
 # Winners and losers
@@ -76,7 +76,7 @@ Here's a count of the number of winners, losers, and places we've had.
 
 |result                  |   n|percent |
 |:-----------------------|---:|:-------|
-|Win only Lose           | 964|70%     |
+|Win only Lose           | 970|70%     |
 |Win only Win            | 195|14%     |
 |Each way Lose           | 108|8%      |
 |Win only Unmatched Loss |  45|3%      |
@@ -90,7 +90,7 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 711 _win only_ bets, on which we've made a profit of €7,655. 
+* We've made 714 _win only_ bets, on which we've made a profit of €7,346. 
 * We've made 103 _each way_ bets, on which we've made a profit of €406.
 
 
@@ -100,4 +100,4 @@ Here's a count of the number of winners, losers, and places we've had.
 
 We'll consider only win only bets (and not each way bets) in this section.
 
-Of the bets that have been matched, there have been 133 winners and 568 losers. That means that 19% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 45 losers. That means that 22% of unmatched bets have been winners. Unmatched bets have saved us 43 points on losers but cost us 80 on winners, whereas getting better odds on posted bets which were matched has made us 53 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 16 points.
+Of the bets that have been matched, there have been 133 winners and 571 losers. That means that 19% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 45 losers. That means that 22% of unmatched bets have been winners. Unmatched bets have saved us 43 points on losers but cost us 80 on winners, whereas getting better odds on posted bets which were matched has made us 53 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 16 points.
