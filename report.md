@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2019-06-17 17:39:07"
+date: "2019-06-18 17:37:27"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €7,294 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,022 so our net profit is €5,272. That's a return on capital of 58.58%. This gives us a current bank of €14272.
+We put in €9000 and we've made a profit of €7,167 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,017 so our net profit is €5,150. That's a return on capital of 57.22%. This gives us a current bank of €14150.
 
-We have wagered a total of €100,013 and made a betting profit of €7,294, which gives us a betting ROI of 7.29%.
+We have wagered a total of €100,130 and made a betting profit of €7,167, which gives us a betting ROI of 7.16%.
 
 
 # Have any bookies been riddled?
@@ -30,7 +30,7 @@ We have wagered a total of €100,013 and made a betting profit of €7,294, whi
 |Unibet       |+17   |+55  |+72   |
 |Betfred      |+20   |+35  |+55   |
 |Paddy Power  |+41   |+1   |+42   |
-|Matchbook    |+32   |+7   |+39   |
+|Matchbook    |+30   |+7   |+37   |
 |Bet365       |0     |+36  |+36   |
 |SportingBet  |0     |+10  |+10   |
 |SkyBet       |+10   |-1   |+10   |
@@ -66,7 +66,7 @@ We have wagered a total of €100,013 and made a betting profit of €7,294, whi
 
 
 
-We've had winnings of 1481 points and losses of 1327 points, so even if our odds were only a fraction 1327 / 1481 = 0.9 of what we actually got, we'd still be breaking even.
+We've had winnings of 1481 points and losses of 1329 points, so even if our odds were only a fraction 1329 / 1481 = 0.9 of what we actually got, we'd still be breaking even.
 
 
 # Winners and losers
@@ -76,7 +76,7 @@ Here's a count of the number of winners, losers, and places we've had.
 
 |result                  |   n|percent |
 |:-----------------------|---:|:-------|
-|Win only Lose           | 979|70%     |
+|Win only Lose           | 980|70%     |
 |Win only Win            | 195|14%     |
 |Each way Lose           | 108|8%      |
 |Win only Unmatched Loss |  46|3%      |
@@ -90,8 +90,8 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 720 _win only_ bets, on which we've made a profit of €6,887. 
-* We've made 103 _each way_ bets, on which we've made a profit of €406.
+* We've made 721 _win only_ bets, on which we've made a profit of €6,759. 
+* We've made 103 _each way_ bets, on which we've made a profit of €408.
 
 
 # Unmatched Bets
@@ -100,4 +100,4 @@ Here's a count of the number of winners, losers, and places we've had.
 
 We'll consider only win only bets (and not each way bets) in this section.
 
-Of the bets that have been matched, there have been 133 winners and 576 losers. That means that 19% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 46 losers. That means that 22% of unmatched bets have been winners. Unmatched bets have saved us 45 points on losers but cost us 80 on winners, whereas getting better odds on posted bets which were matched has made us 53 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 18 points.
+Of the bets that have been matched, there have been 133 winners and 577 losers. That means that 19% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 46 losers. That means that 22% of unmatched bets have been winners. Unmatched bets have saved us 45 points on losers but cost us 80 on winners, whereas getting better odds on posted bets which were matched has made us 53 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 18 points.
