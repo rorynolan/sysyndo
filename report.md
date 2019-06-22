@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2019-06-21 17:39:11"
+date: "2019-06-22 17:41:04"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €7,764 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,025 so our net profit is €5,739. That's a return on capital of 63.77%. This gives us a current bank of €14739.
+We put in €9000 and we've made a profit of €7,664 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,019 so our net profit is €5,645. That's a return on capital of 62.72%. This gives us a current bank of €14645.
 
-We have wagered a total of €100,339 and made a betting profit of €7,764, which gives us a betting ROI of 7.74%.
+We have wagered a total of €100,449 and made a betting profit of €7,664, which gives us a betting ROI of 7.63%.
 
 
 # Have any bookies been riddled?
@@ -55,7 +55,7 @@ We have wagered a total of €100,339 and made a betting profit of €7,764, whi
 |Boylesports  |-6    |0    |-6    |
 |SportsPesa   |0     |-6   |-6    |
 |188Bet       |-3    |-4   |-6    |
-|William Hill |+3    |-10  |-7    |
+|William Hill |+3    |-11  |-7    |
 |BetStars     |-2    |-9   |-10   |
 |Ladbrokes    |0     |-18  |-18   |
 |Black Type   |0     |-26  |-26   |
@@ -66,7 +66,7 @@ We have wagered a total of €100,339 and made a betting profit of €7,764, whi
 
 
 
-We've had winnings of 1492 points and losses of 1331 points, so even if our odds were only a fraction 1331 / 1492 = 0.89 of what we actually got, we'd still be breaking even.
+We've had winnings of 1492 points and losses of 1332 points, so even if our odds were only a fraction 1332 / 1492 = 0.89 of what we actually got, we'd still be breaking even.
 
 
 # Winners and losers
@@ -76,7 +76,7 @@ Here's a count of the number of winners, losers, and places we've had.
 
 |result                  |   n|percent |
 |:-----------------------|---:|:-------|
-|Win only Lose           | 984|70%     |
+|Win only Lose           | 988|70%     |
 |Win only Win            | 196|14%     |
 |Each way Lose           | 108|8%      |
 |Win only Unmatched Loss |  46|3%      |
@@ -90,8 +90,8 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 723 _win only_ bets, on which we've made a profit of €7,359. 
-* We've made 103 _each way_ bets, on which we've made a profit of €405.
+* We've made 724 _win only_ bets, on which we've made a profit of €7,257. 
+* We've made 103 _each way_ bets, on which we've made a profit of €407.
 
 
 # Unmatched Bets
@@ -100,4 +100,4 @@ Here's a count of the number of winners, losers, and places we've had.
 
 We'll consider only win only bets (and not each way bets) in this section.
 
-Of the bets that have been matched, there have been 134 winners and 578 losers. That means that 19% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 46 losers. That means that 22% of unmatched bets have been winners. Unmatched bets have saved us 45 points on losers but cost us 80 on winners, whereas getting better odds on posted bets which were matched has made us 56 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 21 points.
+Of the bets that have been matched, there have been 134 winners and 579 losers. That means that 19% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 46 losers. That means that 22% of unmatched bets have been winners. Unmatched bets have saved us 45 points on losers but cost us 80 on winners, whereas getting better odds on posted bets which were matched has made us 56 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 21 points.
