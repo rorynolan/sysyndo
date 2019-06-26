@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2019-06-25 17:39:50"
+date: "2019-06-26 17:40:32"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €8,889 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,014 so our net profit is €6,875. That's a return on capital of 76.39%. This gives us a current bank of €15875.
+We put in €9000 and we've made a profit of €9,384 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,012 so our net profit is €7,372. That's a return on capital of 81.91%. This gives us a current bank of €16372.
 
-We have wagered a total of €101,607 and made a betting profit of €8,889, which gives us a betting ROI of 8.75%.
+We have wagered a total of €101,940 and made a betting profit of €9,384, which gives us a betting ROI of 9.21%.
 
 
 # Have any bookies been riddled?
@@ -28,16 +28,17 @@ We have wagered a total of €101,607 and made a betting profit of €8,889, whi
 |bookmaker    |Aidan |David |Rory |total |
 |:------------|:-----|:-----|:----|:-----|
 |Unibet       |+17   |0     |+55  |+72   |
-|Matchbook    |+58   |0     |+7   |+65   |
+|Matchbook    |+56   |0     |+7   |+63   |
 |Betfred      |+20   |0     |+31  |+51   |
-|Paddy Power  |+42   |0     |+1   |+44   |
+|Paddy Power  |+45   |0     |+1   |+46   |
 |Bet365       |0     |0     |+36  |+36   |
+|SkyBet       |+12   |0     |-1   |+12   |
 |SportingBet  |0     |0     |+10  |+10   |
-|SkyBet       |+10   |0     |-1   |+10   |
 |10Bet        |+14   |0     |-6   |+8    |
 |NA           |0     |0     |+7   |+7    |
 |SpreadEx     |+6    |0     |0    |+6    |
 |Coral        |+5    |0     |0    |+5    |
+|William Hill |+2    |0     |0    |+2    |
 |Marathon     |0     |0     |+2   |+2    |
 |Betway       |0     |0     |0    |0     |
 |HC Matchbook |0     |0     |-1   |-1    |
@@ -48,7 +49,6 @@ We have wagered a total of €101,607 and made a betting profit of €8,889, whi
 |Redzone      |0     |0     |-1   |-1    |
 |SportNation  |0     |0     |-2   |-2    |
 |BetVictor    |0     |0     |-3   |-3    |
-|William Hill |+2    |0     |-6   |-4    |
 |Various      |-3    |0     |-1   |-4    |
 |BoyleSports  |-5    |0     |0    |-5    |
 |888Sport     |0     |0     |-5   |-5    |
@@ -66,7 +66,7 @@ We have wagered a total of €101,607 and made a betting profit of €8,889, whi
 
 
 
-We've had winnings of 1522 points and losses of 1341 points, so even if our odds were only a fraction 1341 / 1522 = 0.88 of what we actually got, we'd still be breaking even.
+We've had winnings of 1534 points and losses of 1345 points, so even if our odds were only a fraction 1345 / 1534 = 0.88 of what we actually got, we'd still be breaking even.
 
 
 # Winners and losers
@@ -74,24 +74,24 @@ We've had winnings of 1522 points and losses of 1341 points, so even if our odds
 Here's a count of the number of winners, losers, and places we've had.
 
 
-|result                  |   n|percent |
-|:-----------------------|---:|:-------|
-|Win only Lose           | 999|70%     |
-|Win only Win            | 203|14%     |
-|Each way Lose           | 108|8%      |
-|Win only Unmatched Loss |  48|3%      |
-|Each way Place          |  37|3%      |
-|Each way Win            |  19|1%      |
-|Win only Unmatched Win  |  13|1%      |
-|Each way Unmatched Loss |   1|0%      |
+|result                  |    n|percent |
+|:-----------------------|----:|:-------|
+|Win only Lose           | 1002|70%     |
+|Win only Win            |  206|14%     |
+|Each way Lose           |  108|8%      |
+|Win only Unmatched Loss |   48|3%      |
+|Each way Place          |   37|3%      |
+|Each way Win            |   19|1%      |
+|Win only Unmatched Win  |   13|1%      |
+|Each way Unmatched Loss |    1|0%      |
 
 
 # Win only vs each way
 
 
 
-* We've made 733 _win only_ bets, on which we've made a profit of €8,480. 
-* We've made 103 _each way_ bets, on which we've made a profit of €409.
+* We've made 736 _win only_ bets, on which we've made a profit of €8,975. 
+* We've made 103 _each way_ bets, on which we've made a profit of €410.
 
 
 # Unmatched Bets
@@ -100,4 +100,4 @@ Here's a count of the number of winners, losers, and places we've had.
 
 We'll consider only win only bets (and not each way bets) in this section.
 
-Of the bets that have been matched, there have been 137 winners and 585 losers. That means that 19% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 48 losers. That means that 21% of unmatched bets have been winners. Unmatched bets have saved us 48 points on losers but cost us 81 on winners, whereas getting better odds on posted bets which were matched has made us 60 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 27 points.
+Of the bets that have been matched, there have been 138 winners and 587 losers. That means that 19% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 48 losers. That means that 21% of unmatched bets have been winners. Unmatched bets have saved us 48 points on losers but cost us 81 on winners, whereas getting better odds on posted bets which were matched has made us 60 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 27 points.
