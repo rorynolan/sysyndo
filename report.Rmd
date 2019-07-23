@@ -46,6 +46,8 @@ get_exchange_rate <- function(from, to, dt = Sys.Date()) {
 
 exrate_gbp_eur <- get_exchange_rate("GBP", "EUR")
 investments <- c(Rory = 4000, Aidan = 4000, John = 1000)
+investment_props <- investments / sum(investments)
+
 
 ### Get the spreadsheet
 bad <- TRUE
@@ -87,10 +89,7 @@ df_deduped <- df %>%
   ungroup() %>% 
   mutate(rule_4 = if_else(is.na(rule_4), 0, rule_4))
 
-eur_pt_change_dates <- df %>% 
-  dplyr::filter(c(FALSE, diff(eur_pt) != 0)) %>% 
-  dplyr::pull(date)
-payment_dates <- c(df$date[1], eur_pt_change_dates)
+payment_dates <- ymd(c("18-4-25", "18-6-17", "19-4-1", "19-6-4", "19-7-17"))
 ```
 
 # Profit over time
@@ -288,3 +287,19 @@ unmatched_desc <- if_else(pts_profit_by_unmatched >= 0, "saved", "cost")
 We'll consider only win only bets (and not each way bets) in this section.
 
 Of the bets that have been matched, there have been `r n_matched_winners` winners and `r n_matched_losers` losers. That means that `r matched_win_perc`% of matched bets have been winners. Of the bets that have not been matched, there have been `r n_unmatched_winners` winners and `r n_unmatched_losers` losers. That means that `r unmatched_win_perc`% of unmatched bets have been winners. Unmatched bets have saved us `r pts_saved_by_unmatched` points on losers but cost us `r pts_lost_by_unmatched` on winners, whereas getting better odds on posted bets which were matched has made us `r pts_gained_by_better_posted_odds` points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has `r unmatched_desc` us `r abs(pts_profit_by_unmatched)` points.
+
+
+# Summary
+
+```{r summary-prep}
+eur_prof_tot <- round(win_total_eur + ew_total_eur)
+eur_subs_tot <- round(length(payment_dates) * 600 * exrate_gbp_eur)
+eur_net_tot <- round(eur_prof_tot - eur_subs_tot)
+
+```
+
+We've made a gross profit of €`r format(eur_prof_tot, big.mark = ",")` and paid €`r format(eur_subs_tot, big.mark = ",")` in subscription fees, so our net profit is €`r format(eur_net_tot, big.mark = ",")`.
+
+* Rory has a `r round(investment_props["Rory"], 2) * 100`% share of the investment, therefore his net profit is €`r format(round(investment_props["Rory"] * eur_net_tot), big.mark = ",")`.
+* Aidan has a `r round(investment_props["Aidan"], 2) * 100`% share of the investment, therefore his net profit is €`r format(round(investment_props["Aidan"] * eur_net_tot), big.mark = ",")`.
+* John has a `r round(investment_props["John"], 2) * 100`% share of the investment, therefore his net profit is €`r format(round(investment_props["John"] * eur_net_tot), big.mark = ",")`.
