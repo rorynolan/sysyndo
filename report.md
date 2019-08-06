@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2019-08-05 18:00:14"
+date: "2019-08-06 18:00:08"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €7,485 on the bets. However, we've paid three subscriptions of £600 which amounts to €1,970 so our net profit is €5,515. That's a return on capital of 61.28%. This gives us a current bank of €14515.
+We put in €9000 and we've made a profit of €7,380 on the bets. However, we've paid three subscriptions of £600 which amounts to €1,958 so our net profit is €5,422. That's a return on capital of 60.24%. This gives us a current bank of €14422.
 
-We have wagered a total of €112,368 and made a betting profit of €7,485, which gives us a betting ROI of 6.66%.
+We have wagered a total of €112,490 and made a betting profit of €7,380, which gives us a betting ROI of 6.56%.
 
 
 # Have any bookies been riddled?
@@ -28,8 +28,8 @@ We have wagered a total of €112,368 and made a betting profit of €7,485, whi
 |bookmaker    |Aidan |David |Rory |total |
 |:------------|:-----|:-----|:----|:-----|
 |Unibet       |+17   |0     |+55  |+72   |
-|Matchbook    |+49   |0     |+5   |+54   |
 |Paddy Power  |+53   |0     |+1   |+54   |
+|Matchbook    |+48   |0     |+5   |+53   |
 |Betfred      |+20   |0     |+29  |+49   |
 |Bet365       |0     |-3    |+36  |+36   |
 |SkyBet       |+18   |0     |-1   |+18   |
@@ -66,7 +66,7 @@ We have wagered a total of €112,368 and made a betting profit of €7,485, whi
 
 
 
-We've had winnings of 1635 points and losses of 1478 points, so even if our odds were only a fraction 1478 / 1635 = 0.9 of what we actually got, we'd still be breaking even.
+We've had winnings of 1635 points and losses of 1480 points, so even if our odds were only a fraction 1480 / 1635 = 0.91 of what we actually got, we'd still be breaking even.
 
 
 # Winners and losers
@@ -76,10 +76,10 @@ Here's a count of the number of winners, losers, and places we've had.
 
 |result                  |    n|percent |
 |:-----------------------|----:|:-------|
-|Win only Lose           | 1185|71%     |
+|Win only Lose           | 1186|71%     |
 |Win only Win            |  234|14%     |
 |Each way Lose           |  117|7%      |
-|Win only Unmatched Loss |   58|3%      |
+|Win only Unmatched Loss |   59|4%      |
 |Each way Place          |   40|2%      |
 |Each way Win            |   20|1%      |
 |Win only Unmatched Win  |   13|1%      |
@@ -90,8 +90,8 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 824 _win only_ bets, on which we've made a profit of €6,695. 
-* We've made 108 _each way_ bets, on which we've made a profit of €790.
+* We've made 825 _win only_ bets, on which we've made a profit of €6,585. 
+* We've made 108 _each way_ bets, on which we've made a profit of €794.
 
 
 # Unmatched Bets
@@ -100,15 +100,15 @@ Here's a count of the number of winners, losers, and places we've had.
 
 We'll consider only win only bets (and not each way bets) in this section.
 
-Of the bets that have been matched, there have been 147 winners and 665 losers. That means that 18% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 58 losers. That means that 18% of unmatched bets have been winners. Unmatched bets have saved us 60 points on losers but cost us 81 on winners, whereas getting better odds on posted bets which were matched has made us 69 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 48 points.
+Of the bets that have been matched, there have been 147 winners and 666 losers. That means that 18% of matched bets have been winners. Of the bets that have not been matched, there have been 13 winners and 59 losers. That means that 18% of unmatched bets have been winners. Unmatched bets have saved us 60 points on losers but cost us 81 on winners, whereas getting better odds on posted bets which were matched has made us 69 points (where I have assumed that when we post, we get 20% better odds than if we'd just taken best available at the time). So overall, choosing to post when we do (rather than taking the bad bbest available odds) has saved us 48 points.
 
 
 # Summary
 
 
 
-We've made a gross profit of €7,485 and paid €3,284 in subscription fees, so our net profit is €4,201.
+We've made a gross profit of €7,379 and paid €3,264 in subscription fees, so our net profit is €4,115.
 
-* Rory has a 44% share of the investment, therefore his net profit is €1,867.
-* Aidan has a 44% share of the investment, therefore his net profit is €1,867.
-* John has a 11% share of the investment, therefore his net profit is €467.
+* Rory has a 44% share of the investment, therefore his net profit is €1,829.
+* Aidan has a 44% share of the investment, therefore his net profit is €1,829.
+* John has a 11% share of the investment, therefore his net profit is €457.
