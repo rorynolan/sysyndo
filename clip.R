@@ -1,4 +1,4 @@
-if (!requireNamespace("pacman")) install.packages("pacman")
+if (!"pacman" %in% rownames(installed.packages())) install.packages("pacman")
 pacman::p_load(gmailr, here, tidyverse, filesstrings, magrittr, checkmate,
                lubridate, parsedate, conflicted, xml2, rvest, janitor, clipr,
                memoise, beepr)
@@ -7,7 +7,7 @@ conflict_prefer("setdiff", "dplyr")
 conflict_prefer("body", "base")
 conflict_prefer("message", "base")
 
-use_secret_file(here::here("gmailrn.json"))
+gm_auth_configure(path = here::here("gmailrn.json"))
 
 #' Get the number of unix epoch seconds in a datetime.
 #'
@@ -30,7 +30,7 @@ unix_secs <- function(datetime) {
 #'
 #' @noRd
 extract_table_non_memoised <- function(msg) {
-  msg_body <- gmailr::body(msg, "text")[[2]]
+  msg_body <- gm_body(msg, "text")[[2]]
   assert_character(msg_body)
   msg_body %<>% read_html()
   rows <- xml_find_all(msg_body, "//tr")
@@ -61,6 +61,22 @@ msg_category <- function(msg) {
   out
 }
 
+#' Get the body of a `gmail_message` as a string.
+#'
+#' @param gmail_message A `gmail_message`.
+#'
+#' @return A string.
+gmailr_msg_body_chr <- function(gmail_message) {
+  bod <- gm_body(gmail_message)
+  if (length(bod)) {
+    out <- str_c(bod[[1]], collapse = "\n")
+  } else {
+    out <- character(1)
+  }
+  assert_string(out)
+  out
+}
+
 #' Copy bet table to clipboard.
 #'
 #' @param cat The category. Either 10, 15 or 20.
@@ -80,8 +96,8 @@ clip_bets <- function(category, msg_time = "early", days_ago = 0) {
   enough <- FALSE
   while (!enough) {
     msgs <- messages(search = "sysanalyst", num_results = n)
-    msg_ids <- gmailr::id(msgs)
-    msgs <- map(msg_ids, gmailr::message)
+    msg_ids <- gm_id(msgs)
+    msgs <- map(msg_ids, gm_message)
     dates <- map(msgs, gmailr::date)
     if (min(unix_secs(dates)) <= unix_secs(req_date)) {
       enough <- TRUE
@@ -93,7 +109,7 @@ clip_bets <- function(category, msg_time = "early", days_ago = 0) {
   msgs <- msgs[
     between(unix_secs(dates), unix_secs(req_date), unix_secs(date_after))
     ]
-  msg_bodies <- map_chr(msgs, ~gmailr::body(.)[[1]])
+  msg_bodies <- map_chr(msgs, gmailr_msg_body_chr)
   msgs <- msgs[str_detect(msg_bodies, "Cat.+Time.+Crs.+Name.+Total Stake")]
   msg_cats <- map_chr(msgs, msg_category)
   msgs <- msgs[msg_cats == category]
