@@ -95,7 +95,7 @@ clip_bets <- function(category, msg_time = "early", days_ago = 0) {
   n <- 10
   enough <- FALSE
   while (!enough) {
-    msgs <- messages(search = "sysanalyst", num_results = n)
+    msgs <- gm_messages(search = "sysanalyst", num_results = n)
     msg_ids <- gm_id(msgs)
     msgs <- map(msg_ids, gm_message)
     dates <- map(msgs, gmailr::date)
