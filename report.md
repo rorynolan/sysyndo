@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2019-08-26 18:27:41"
+date: "2019-08-27 09:10:40"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €12,176 on the bets. However, we've paid three subscriptions of £600 which amounts to €1,985 so our net profit is €10,191. That's a return on capital of 113.23%. This gives us a current bank of €19191.
+We put in €9000 and we've made a profit of €12,169 on the bets. However, we've paid three subscriptions of £600 which amounts to €1,982 so our net profit is €10,187. That's a return on capital of 113.19%. This gives us a current bank of €19187.
 
-We have wagered a total of €117,865 and made a betting profit of €12,176, which gives us a betting ROI of 10.33%.
+We have wagered a total of €117,865 and made a betting profit of €12,169, which gives us a betting ROI of 10.32%.
 
 
 # Have any bookies been riddled?
@@ -29,14 +29,14 @@ We have wagered a total of €117,865 and made a betting profit of €12,176, wh
 |:------------|:-----|:-----|:----|:-----|
 |Unibet       |+17   |0     |+55  |+72   |
 |Paddy Power  |+62   |0     |+1   |+63   |
-|Matchbook    |+56   |0     |+2   |+58   |
+|Matchbook    |+55   |0     |+2   |+57   |
 |Betfred      |+20   |0     |+28  |+48   |
 |William Hill |-6    |0     |+48  |+42   |
 |Bet365       |0     |-4    |+36  |+36   |
 |SkyBet       |+18   |0     |-1   |+18   |
 |SportingBet  |0     |+2    |+10  |+10   |
 |10Bet        |+15   |0     |-6   |+9    |
-|NA           |-1    |0     |+7   |+6    |
+|NA           |0     |0     |+7   |+7    |
 |Coral        |+5    |-2    |-1   |+5    |
 |SpreadEx     |+3    |0     |0    |+3    |
 |Marathon     |0     |0     |+2   |+2    |
@@ -90,8 +90,8 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 870 _win only_ bets, on which we've made a profit of €11,446. 
-* We've made 110 _each way_ bets, on which we've made a profit of €730.
+* We've made 870 _win only_ bets, on which we've made a profit of €11,438. 
+* We've made 110 _each way_ bets, on which we've made a profit of €731.
 
 
 # Unmatched Bets
@@ -107,8 +107,8 @@ Of the bets that have been matched, there have been 159 winners and 695 losers. 
 
 
 
-We've made a gross profit of €12,176 and paid €3,308 in subscription fees, so our net profit is €8,868.
+We've made a gross profit of €12,169 and paid €3,303 in subscription fees, so our net profit is €8,866.
 
-* Rory has a 44% share of the investment, therefore his net profit is €3,941.
-* Aidan has a 44% share of the investment, therefore his net profit is €3,941.
+* Rory has a 44% share of the investment, therefore his net profit is €3,940.
+* Aidan has a 44% share of the investment, therefore his net profit is €3,940.
 * John has a 11% share of the investment, therefore his net profit is €985.
