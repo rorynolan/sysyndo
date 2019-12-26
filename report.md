@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2019-12-25 19:15:46"
+date: "2019-12-26 19:16:54"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €13,841 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,102 so our net profit is €11,739. That's a return on capital of 130.43%. This gives us a current bank of €20739.
+We put in €9000 and we've made a profit of €13,840 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,102 so our net profit is €11,738. That's a return on capital of 130.42%. This gives us a current bank of €20738.
 
-We have wagered a total of €119,485 and made a betting profit of €13,841, which gives us a betting ROI of 11.58%.
+We have wagered a total of €119,485 and made a betting profit of €13,840, which gives us a betting ROI of 11.58%.
 
 
 # Have any bookies been riddled?
@@ -90,7 +90,7 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 882 _win only_ bets, on which we've made a profit of €13,241. 
+* We've made 882 _win only_ bets, on which we've made a profit of €13,239. 
 * We've made 111 _each way_ bets, on which we've made a profit of €601.
 
 
@@ -107,8 +107,8 @@ Of the bets that have been matched, there have been 163 winners and 702 losers. 
 
 
 
-We've made a gross profit of €13,842 and paid €3,504 in subscription fees, so our net profit is €10,338.
+We've made a gross profit of €13,840 and paid €3,503 in subscription fees, so our net profit is €10,337.
 
-* Rory has a 44% share of the investment, therefore his net profit is €4,595.
-* Aidan has a 44% share of the investment, therefore his net profit is €4,595.
+* Rory has a 44% share of the investment, therefore his net profit is €4,594.
+* Aidan has a 44% share of the investment, therefore his net profit is €4,594.
 * John has a 11% share of the investment, therefore his net profit is €1,149.
