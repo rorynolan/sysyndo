@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2020-01-25 19:34:08"
+date: "2020-01-26 19:34:39"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €13,931 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,136 so our net profit is €11,795. That's a return on capital of 131.06%. This gives us a current bank of €20795.
+We put in €9000 and we've made a profit of €13,927 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,135 so our net profit is €11,792. That's a return on capital of 131.02%. This gives us a current bank of €20792.
 
-We have wagered a total of €119,485 and made a betting profit of €13,931, which gives us a betting ROI of 11.66%.
+We have wagered a total of €119,485 and made a betting profit of €13,927, which gives us a betting ROI of 11.66%.
 
 
 # Have any bookies been riddled?
@@ -90,8 +90,8 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 882 _win only_ bets, on which we've made a profit of €13,341. 
-* We've made 111 _each way_ bets, on which we've made a profit of €589.
+* We've made 882 _win only_ bets, on which we've made a profit of €13,337. 
+* We've made 111 _each way_ bets, on which we've made a profit of €590.
 
 
 # Unmatched Bets
@@ -107,8 +107,8 @@ Of the bets that have been matched, there have been 163 winners and 702 losers. 
 
 
 
-We've made a gross profit of €13,930 and paid €3,560 in subscription fees, so our net profit is €10,370.
+We've made a gross profit of €13,927 and paid €3,558 in subscription fees, so our net profit is €10,369.
 
-* Rory has a 44% share of the investment, therefore his net profit is €4,609.
-* Aidan has a 44% share of the investment, therefore his net profit is €4,609.
+* Rory has a 44% share of the investment, therefore his net profit is €4,608.
+* Aidan has a 44% share of the investment, therefore his net profit is €4,608.
 * John has a 11% share of the investment, therefore his net profit is €1,152.
