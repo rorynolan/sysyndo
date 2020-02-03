@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2020-02-02 19:38:15"
+date: "2020-02-03 19:38:39"
 output: github_document
 ---
 
@@ -90,7 +90,7 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 882 _win only_ bets, on which we've made a profit of €13,360. 
+* We've made 882 _win only_ bets, on which we've made a profit of €13,359. 
 * We've made 111 _each way_ bets, on which we've made a profit of €587.
 
 
@@ -107,7 +107,7 @@ Of the bets that have been matched, there have been 163 winners and 702 losers. 
 
 
 
-We've made a gross profit of €13,947 and paid €3,571 in subscription fees, so our net profit is €10,376.
+We've made a gross profit of €13,946 and paid €3,570 in subscription fees, so our net profit is €10,376.
 
 * Rory has a 44% share of the investment, therefore his net profit is €4,612.
 * Aidan has a 44% share of the investment, therefore his net profit is €4,612.
