@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2020-04-03 20:26:13"
+date: "2020-04-04 20:27:20"
 output: github_document
 ---
 
@@ -107,8 +107,8 @@ Of the bets that have been matched, there have been 163 winners and 702 losers. 
 
 
 
-We've made a gross profit of €13,699 and paid €3,413 in subscription fees, so our net profit is €10,286.
+We've made a gross profit of €13,699 and paid €3,414 in subscription fees, so our net profit is €10,285.
 
-* Rory has a 44% share of the investment, therefore his net profit is €4,572.
-* Aidan has a 44% share of the investment, therefore his net profit is €4,572.
+* Rory has a 44% share of the investment, therefore his net profit is €4,571.
+* Aidan has a 44% share of the investment, therefore his net profit is €4,571.
 * John has a 11% share of the investment, therefore his net profit is €1,143.
