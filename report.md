@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2020-04-29 20:43:15"
+date: "2020-04-30 20:43:33"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €13,746 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,066 so our net profit is €11,680. That's a return on capital of 129.78%. This gives us a current bank of €20680.
+We put in €9000 and we've made a profit of €13,740 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,064 so our net profit is €11,676. That's a return on capital of 129.73%. This gives us a current bank of €20676.
 
-We have wagered a total of €119,485 and made a betting profit of €13,746, which gives us a betting ROI of 11.5%.
+We have wagered a total of €119,485 and made a betting profit of €13,740, which gives us a betting ROI of 11.5%.
 
 
 # Have any bookies been riddled?
@@ -90,7 +90,7 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 882 _win only_ bets, on which we've made a profit of €13,133. 
+* We've made 882 _win only_ bets, on which we've made a profit of €13,126. 
 * We've made 111 _each way_ bets, on which we've made a profit of €613.
 
 
@@ -107,8 +107,8 @@ Of the bets that have been matched, there have been 163 winners and 702 losers. 
 
 
 
-We've made a gross profit of €13,746 and paid €3,444 in subscription fees, so our net profit is €10,302.
+We've made a gross profit of €13,739 and paid €3,440 in subscription fees, so our net profit is €10,299.
 
-* Rory has a 44% share of the investment, therefore his net profit is €4,579.
-* Aidan has a 44% share of the investment, therefore his net profit is €4,579.
-* John has a 11% share of the investment, therefore his net profit is €1,145.
+* Rory has a 44% share of the investment, therefore his net profit is €4,577.
+* Aidan has a 44% share of the investment, therefore his net profit is €4,577.
+* John has a 11% share of the investment, therefore his net profit is €1,144.
