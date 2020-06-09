@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2020-06-08 21:00:28"
+date: "2020-06-09 21:01:15"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €13,623 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,020 so our net profit is €11,603. That's a return on capital of 128.92%. This gives us a current bank of €20603.
+We put in €9000 and we've made a profit of €13,634 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,024 so our net profit is €11,610. That's a return on capital of 129%. This gives us a current bank of €20610.
 
-We have wagered a total of €119,485 and made a betting profit of €13,623, which gives us a betting ROI of 11.4%.
+We have wagered a total of €119,485 and made a betting profit of €13,634, which gives us a betting ROI of 11.41%.
 
 
 # Have any bookies been riddled?
@@ -90,8 +90,8 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 882 _win only_ bets, on which we've made a profit of €12,995. 
-* We've made 111 _each way_ bets, on which we've made a profit of €628.
+* We've made 882 _win only_ bets, on which we've made a profit of €13,007. 
+* We've made 111 _each way_ bets, on which we've made a profit of €627.
 
 
 # Unmatched Bets
@@ -107,8 +107,8 @@ Of the bets that have been matched, there have been 163 winners and 702 losers. 
 
 
 
-We've made a gross profit of €13,623 and paid €3,366 in subscription fees, so our net profit is €10,257.
+We've made a gross profit of €13,634 and paid €3,373 in subscription fees, so our net profit is €10,261.
 
-* Rory has a 44% share of the investment, therefore his net profit is €4,559.
-* Aidan has a 44% share of the investment, therefore his net profit is €4,559.
+* Rory has a 44% share of the investment, therefore his net profit is €4,560.
+* Aidan has a 44% share of the investment, therefore his net profit is €4,560.
 * John has a 11% share of the investment, therefore his net profit is €1,140.
