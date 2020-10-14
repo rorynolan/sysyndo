@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2020-10-13 22:00:31"
+date: "2020-10-14 22:01:03"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €13,539 on the bets. However, we've paid three subscriptions of £600 which amounts to €1,988 so our net profit is €11,551. That's a return on capital of 128.34%. This gives us a current bank of €20551.
+We put in €9000 and we've made a profit of €13,540 on the bets. However, we've paid three subscriptions of £600 which amounts to €1,988 so our net profit is €11,552. That's a return on capital of 128.36%. This gives us a current bank of €20552.
 
-We have wagered a total of €119,485 and made a betting profit of €13,539, which gives us a betting ROI of 11.33%.
+We have wagered a total of €119,485 and made a betting profit of €13,540, which gives us a betting ROI of 11.33%.
 
 
 # Have any bookies been riddled?
