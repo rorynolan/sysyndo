@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2021-01-12 23:06:52"
+date: "2021-01-13 23:15:17"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €13,565 on the bets. However, we've paid three subscriptions of £600 which amounts to €1,998 so our net profit is €11,567. That's a return on capital of 128.52%. This gives us a current bank of €20567.
+We put in €9000 and we've made a profit of €13,599 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,011 so our net profit is €11,588. That's a return on capital of 128.76%. This gives us a current bank of €20588.
 
-We have wagered a total of €119,485 and made a betting profit of €13,565, which gives us a betting ROI of 11.35%.
+We have wagered a total of €119,485 and made a betting profit of €13,599, which gives us a betting ROI of 11.38%.
 
 
 # Have any bookies been riddled?
@@ -90,8 +90,8 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 882 _win only_ bets, on which we've made a profit of €12,929. 
-* We've made 111 _each way_ bets, on which we've made a profit of €635.
+* We've made 882 _win only_ bets, on which we've made a profit of €12,968. 
+* We've made 111 _each way_ bets, on which we've made a profit of €631.
 
 
 # Unmatched Bets
@@ -107,8 +107,8 @@ Of the bets that have been matched, there have been 163 winners and 702 losers. 
 
 
 
-We've made a gross profit of €13,564 and paid €3,329 in subscription fees, so our net profit is €10,235.
+We've made a gross profit of €13,599 and paid €3,351 in subscription fees, so our net profit is €10,248.
 
-* Rory has a 44% share of the investment, therefore his net profit is €4,549.
-* Aidan has a 44% share of the investment, therefore his net profit is €4,549.
-* John has a 11% share of the investment, therefore his net profit is €1,137.
+* Rory has a 44% share of the investment, therefore his net profit is €4,555.
+* Aidan has a 44% share of the investment, therefore his net profit is €4,555.
+* John has a 11% share of the investment, therefore his net profit is €1,139.
