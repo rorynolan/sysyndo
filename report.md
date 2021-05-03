@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2021-05-02 23:51:59"
+date: "2021-05-03 23:50:34"
 output: github_document
 ---
 
@@ -90,8 +90,8 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 882 _win only_ bets, on which we've made a profit of €13,143. 
-* We've made 111 _each way_ bets, on which we've made a profit of €611.
+* We've made 882 _win only_ bets, on which we've made a profit of €13,142. 
+* We've made 111 _each way_ bets, on which we've made a profit of €612.
 
 
 # Unmatched Bets
