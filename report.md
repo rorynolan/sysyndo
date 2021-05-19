@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2021-05-18 23:56:58"
+date: "2021-05-19 23:57:33"
 output: github_document
 ---
 
@@ -17,9 +17,9 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €13,812 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,091 so our net profit is €11,721. That's a return on capital of 130.23%. This gives us a current bank of €20721.
+We put in €9000 and we've made a profit of €13,816 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,093 so our net profit is €11,723. That's a return on capital of 130.26%. This gives us a current bank of €20723.
 
-We have wagered a total of €119,485 and made a betting profit of €13,812, which gives us a betting ROI of 11.56%.
+We have wagered a total of €119,485 and made a betting profit of €13,816, which gives us a betting ROI of 11.56%.
 
 
 # Have any bookies been riddled?
@@ -90,7 +90,7 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 882 _win only_ bets, on which we've made a profit of €13,207. 
+* We've made 882 _win only_ bets, on which we've made a profit of €13,213. 
 * We've made 111 _each way_ bets, on which we've made a profit of €604.
 
 
@@ -107,8 +107,8 @@ Of the bets that have been matched, there have been 163 winners and 702 losers. 
 
 
 
-We've made a gross profit of €13,811 and paid €3,485 in subscription fees, so our net profit is €10,326.
+We've made a gross profit of €13,817 and paid €3,488 in subscription fees, so our net profit is €10,329.
 
-* Rory has a 44% share of the investment, therefore his net profit is €4,589.
-* Aidan has a 44% share of the investment, therefore his net profit is €4,589.
-* John has a 11% share of the investment, therefore his net profit is €1,147.
+* Rory has a 44% share of the investment, therefore his net profit is €4,591.
+* Aidan has a 44% share of the investment, therefore his net profit is €4,591.
+* John has a 11% share of the investment, therefore his net profit is €1,148.
