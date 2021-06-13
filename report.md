@@ -1,6 +1,6 @@
 ---
 title: "report"
-date: "2021-06-12 00:08:41"
+date: "2021-06-13 00:09:32"
 output: github_document
 ---
 
@@ -17,7 +17,7 @@ output: github_document
 
 
 
-We put in €9000 and we've made a profit of €13,826 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,096 so our net profit is €11,730. That's a return on capital of 130.33%. This gives us a current bank of €20730.
+We put in €9000 and we've made a profit of €13,826 on the bets. However, we've paid three subscriptions of £600 which amounts to €2,097 so our net profit is €11,729. That's a return on capital of 130.32%. This gives us a current bank of €20729.
 
 We have wagered a total of €119,485 and made a betting profit of €13,826, which gives us a betting ROI of 11.57%.
 
@@ -90,8 +90,8 @@ Here's a count of the number of winners, losers, and places we've had.
 
 
 
-* We've made 882 _win only_ bets, on which we've made a profit of €13,223. 
-* We've made 111 _each way_ bets, on which we've made a profit of €603.
+* We've made 882 _win only_ bets, on which we've made a profit of €13,224. 
+* We've made 111 _each way_ bets, on which we've made a profit of €602.
 
 
 # Unmatched Bets
